@@ -1,0 +1,292 @@
+<!-- gabia_deploy/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Market Research Agencies in Indonesia | Research Asia</title>
+  <meta name="description" content="Find the best market research agencies and qualitative/quantitative data collection partners in Indonesia. Compare highly-rated firms for your next project.">
+  <link rel="canonical" href="https://www.research-asia.com/indonesia-market-research-agencies.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Top Market Research Agencies in Indonesia",
+  "description": "Directory of the best market research and data collection agencies operating in Indonesia. Find B2B, qualitative, and quantitative specialists.",
+  "url": "https://www.research-asia.com/indonesia-market-research-agencies.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Research Asia Directory",
+    "url": "https://www.research-asia.com"
+  }
+}
+</script>
+  <script>
+    // 강제로 해당 국가 필터를 세션 스토리지에 심어버림 (페이지 로드 시 자동 필터링 됨)
+    sessionStorage.setItem('rad_search_term', '');
+    sessionStorage.setItem('rad_selected_countries', JSON.stringify(['indonesia']));
+    sessionStorage.setItem('rad_selected_tags', '[]');
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="agencies.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section & Search -->
+  <section class="hero">
+    <div class="container">
+      <h1>Top Market Research Agencies in <span style="color:var(--primary-color);">Indonesia</span></h1>
+      <p>Connect with verified qualitative, quantitative, and B2B fieldwork specialists operating in Indonesia.</p>
+      
+      <div class="search-container">
+        <div class="search-bar-wrapper">
+          <input type="text" id="search-input" class="search-input" placeholder="Search by Region (e.g. Korea), Industry, or Method..." autocomplete="off">
+          <button id="search-btn" class="search-btn">🔍 Search</button>
+        </div>
+        <a href="update.html" class="update-agency-btn" id="update-agency-btn">+ Add / Update<br>Your Agency</a>
+      </div>
+
+      <!-- Mega Menu Filter Bar (ESOMAR Style) -->
+      <div class="filter-container" id="filter-container">
+        <div class="filter-tabs">
+          <button id="clear-filter-btn" class="clear-filter-btn" disabled><span style="font-size:1.1em;">⟲</span> Clear Filters</button>
+          <button class="filter-tab" data-target="dropdown-country">Country ▾</button>
+          <button class="filter-tab" data-target="dropdown-services">Research Services ▾</button>
+          <button class="filter-tab" data-target="dropdown-solutions">Research Solutions ▾</button>
+          <button class="filter-tab" data-target="dropdown-facility">Facility Type ▾</button>
+        </div>
+
+        <!-- Dropdown 0: Country -->
+        <div class="filter-dropdown" id="dropdown-country">
+          <div class="dropdown-grid">
+            <div class="dropdown-col">
+              <h4>East Asia <span style="font-weight:normal; color:#64748B; font-size:0.9em;">(91)</span></h4>
+              <label><input type="checkbox" class="country-filter" value="japan"> Japan <span>38</span></label>
+              <label><input type="checkbox" class="country-filter" value="china"> China <span>31</span></label>
+              <label><input type="checkbox" class="country-filter" value="korea"> South Korea <span>17</span></label>
+              <label><input type="checkbox" class="country-filter" value="taiwan"> Taiwan <span>3</span></label>
+              <label><input type="checkbox" class="country-filter" value="hong kong"> Hong Kong <span>1</span></label>
+              <label><input type="checkbox" class="country-filter" value="mongolia"> Mongolia <span>1</span></label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Southeast Asia <span style="font-weight:normal; color:#64748B; font-size:0.9em;">(92)</span></h4>
+              <label><input type="checkbox" class="country-filter" value="singapore"> Singapore <span>29</span></label>
+              <label><input type="checkbox" class="country-filter" value="vietnam"> Vietnam <span>15</span></label>
+              <label><input type="checkbox" class="country-filter" value="indonesia"> Indonesia <span>14</span></label>
+              <label><input type="checkbox" class="country-filter" value="thailand"> Thailand <span>12</span></label>
+              <label><input type="checkbox" class="country-filter" value="malaysia"> Malaysia <span>11</span></label>
+              <label><input type="checkbox" class="country-filter" value="philippines"> Philippines <span>9</span></label>
+              <label><input type="checkbox" class="country-filter" value="cambodia"> Cambodia <span>2</span></label>
+            </div>
+            <div class="dropdown-col">
+              <h4>South & Central Asia <span style="font-weight:normal; color:#64748B; font-size:0.9em;">(40)</span></h4>
+              <label><input type="checkbox" class="country-filter" value="india"> India <span>34</span></label>
+              <label><input type="checkbox" class="country-filter" value="kazakhstan"> Kazakhstan <span>3</span></label>
+              <label><input type="checkbox" class="country-filter" value="pakistan"> Pakistan <span>1</span></label>
+              <label><input type="checkbox" class="country-filter" value="uzbekistan"> Uzbekistan <span>1</span></label>
+              <label><input type="checkbox" class="country-filter" value="sri lanka"> Sri Lanka <span>1</span></label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Middle East & Others <span style="font-weight:normal; color:#64748B; font-size:0.9em;">(32)</span></h4>
+              <label><input type="checkbox" class="country-filter" value="uae"> UAE <span>11</span></label>
+              <label><input type="checkbox" class="country-filter" value="russia"> Russia <span>7</span></label>
+              <label><input type="checkbox" class="country-filter" value="israel"> Israel <span>4</span></label>
+              <label><input type="checkbox" class="country-filter" value="ksa"> KSA <span>4</span></label>
+              <label><input type="checkbox" class="country-filter" value="lebanon"> Lebanon <span>2</span></label>
+              <label><input type="checkbox" class="country-filter" value="jordan"> Jordan <span>2</span></label>
+              <label><input type="checkbox" class="country-filter" value="iraq"> Iraq <span>1</span></label>
+              <label><input type="checkbox" class="country-filter" value="iran"> Iran <span>1</span></label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Oceania <span style="font-weight:normal; color:#64748B; font-size:0.9em;">(8)</span></h4>
+              <label><input type="checkbox" class="country-filter" value="australia"> Australia <span>7</span></label>
+              <label><input type="checkbox" class="country-filter" value="newzealand"> New Zealand <span>1</span></label>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="filter-dropdown" id="dropdown-solutions">
+          <div class="dropdown-grid">
+            <div class="dropdown-col">
+              <h4>Market Understanding</h4>
+              <label><input type="checkbox" class="tag-filter" value="Segmentation"> Segmentation</label>
+              <label><input type="checkbox" class="tag-filter" value="U&A Studies"> U&A Studies</label>
+              <label><input type="checkbox" class="tag-filter" value="Market Sizing"> Market Sizing</label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Product & Innovation</h4>
+              <label><input type="checkbox" class="tag-filter" value="Concept Testing"> Concept Testing</label>
+              <label><input type="checkbox" class="tag-filter" value="Idea Workshop"> Idea Workshop</label>
+              <label><input type="checkbox" class="tag-filter" value="Product & iHUT"> Product & iHUT</label>
+              <label><input type="checkbox" class="tag-filter" value="Packaging / Design"> Packaging / Design</label>
+              <label><input type="checkbox" class="tag-filter" value="Pricing Studies"> Pricing Studies</label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Brand & Customer Exp.</h4>
+              <label><input type="checkbox" class="tag-filter" value="Brand Tracking"> Brand Tracking</label>
+              <label><input type="checkbox" class="tag-filter" value="Ad / Copy Testing"> Ad / Copy Testing</label>
+              <label><input type="checkbox" class="tag-filter" value="CSAT & NPS"> CSAT & NPS</label>
+              <label><input type="checkbox" class="tag-filter" value="UX / UI Testing"> UX / UI Testing</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 3: Research Services -->
+        <div class="filter-dropdown" id="dropdown-services">
+          <div class="dropdown-grid">
+            <div class="dropdown-col">
+              <h4>Domains</h4>
+              <label><input type="checkbox" class="tag-filter" value="Social & Public"> Social & Public</label>
+              <label><input type="checkbox" class="tag-filter" value="Healthcare & Pharma"> Healthcare & Pharma</label>
+              <label><input type="checkbox" class="tag-filter" value="Shopper & Retail"> Shopper & Retail</label>
+              <label><input type="checkbox" class="tag-filter" value="Employee & Organizational"> Employee & Organizational</label>
+              <label><input type="checkbox" class="tag-filter" value="Media & Audience"> Media & Audience</label>
+              <label><input type="checkbox" class="tag-filter" value="Consumers"> Consumers</label>
+              <label><input type="checkbox" class="tag-filter" value="Users"> Users</label>
+              <label><input type="checkbox" class="tag-filter" value="AI"> AI</label>
+              <label><input type="checkbox" class="tag-filter" value="B2B"> B2B</label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Qualitative</h4>
+              <label><input type="checkbox" class="tag-filter" value="Focus Groups"> Focus Groups</label>
+              <label><input type="checkbox" class="tag-filter" value="Indepth Interview"> Indepth Interview</label>
+              <label><input type="checkbox" class="tag-filter" value="Ethnography"> Ethnography</label>
+              <label><input type="checkbox" class="tag-filter" value="Mobile Diaries"> Mobile Diaries</label>
+              <label><input type="checkbox" class="tag-filter" value="Qualboard"> Qualboard</label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Quantitative</h4>
+              <label><input type="checkbox" class="tag-filter" value="Online Surveys"> Online Surveys</label>
+              <label><input type="checkbox" class="tag-filter" value="Face to Face Interview"> Face to Face Interview</label>
+              <label><input type="checkbox" class="tag-filter" value="Panel Management"> Panel Management</label>
+              <label><input type="checkbox" class="tag-filter" value="Data Visualisation"> Data Visualisation</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 4: Facility Type -->
+        <div class="filter-dropdown" id="dropdown-facility">
+          <div class="dropdown-grid">
+            <div class="dropdown-col">
+              <h4>Facility Capabilities</h4>
+              <label><input type="checkbox" class="tag-filter" value="Focus Group Room"> Focus Group Room</label>
+              <label><input type="checkbox" class="tag-filter" value="Central Location Test"> Central Location Test</label>
+              <label><input type="checkbox" class="tag-filter" value="Test Kitchen"> Test Kitchen</label>
+              <label><input type="checkbox" class="tag-filter" value="Sensory Test Room"> Sensory Test Room</label>
+              <label><input type="checkbox" class="tag-filter" value="UX Testing Lab"> UX Testing Lab</label>
+              <label><input type="checkbox" class="tag-filter" value="Viewing Room (One-way)"> Viewing Room (One-way)</label>
+            </div>
+            <div class="dropdown-col">
+              <h4>Fieldwork facility</h4>
+              <label><input type="checkbox" class="tag-filter" value="Call Booth"> Call Booth</label>
+              <label><input type="checkbox" class="tag-filter" value="Online Streaming"> Online Streaming</label>
+              <label><input type="checkbox" class="tag-filter" value="Survey Platform"> Survey Platform</label>
+              <label><input type="checkbox" class="tag-filter" value="AI moderator"> AI moderator</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Directory List Container -->
+  <section class="directory-section container" id="agency-list">
+    <!-- Populated by app.js -->
+  </section>
+
+  <!-- Cost Estimator Modal Trigger Button (Floating or Sidebar context) - Hidden for now -->
+  <div id="cost-estimator-section" style="display: none; text-align: center; margin-bottom: 5rem;">
+    <button class="estimate-btn open-estimate" style="display:inline-block; max-width: 300px;">
+      💡 Asia Research Cost Estimator
+    </button>
+    <p style="color:var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">
+      See how much your upcoming multi-country research might cost.
+    </p>
+  </div>
+
+  <!-- Full Screen Modal Overlay -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal">&times;</button>
+      
+      <!-- Funnel Step 1: Input Variables -->
+      <div id="step-1" class="funnel-step active">
+        <h2 style="color:var(--primary-color); margin-bottom:0.5rem;">Cost Estimator</h2>
+        <p style="color:var(--text-muted); margin-bottom:2rem; font-size:0.95rem;">Select your parameters to get an instant budget overview.</p>
+        
+        <div class="input-group">
+          <label>Target Countries</label>
+          <select id="t-country" multiple style="height: 100px;">
+            <option value="sg">Singapore</option>
+            <option value="kr">South Korea</option>
+            <option value="jp">Japan</option>
+            <option value="vn">Vietnam</option>
+            <option value="id">Indonesia</option>
+          </select>
+          <small style="color:#94a3b8; padding-top:4px; display:block;">Hold Ctrl (Windows) or Cmd (Mac) to select multiple</small>
+        </div>
+
+        <div class="input-group">
+          <label>Research Method</label>
+          <select id="t-method">
+            <option value="fgd">Focus Group Discussion (FGD)</option>
+            <option value="idi">In-Depth Interviews (IDI)</option>
+            <option value="survey">Online Survey</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Targeting Difficulty</label>
+          <select id="t-diff">
+            <option value="standard">Standard Consumer</option>
+            <option value="hard">Hard-to-reach Niche</option>
+            <option value="extreme">C-Level / B2B Decision Maker</option>
+          </select>
+        </div>
+        
+        <button id="calculate-btn" class="estimate-btn">Calculate My Estimate</button>
+      </div>
+
+      <!-- Funnel Step 2: Lead Capture (Gate) -->
+      <div id="step-2" class="funnel-step">
+        <div style="text-align:center; padding: 1rem 0;">
+          <h2 style="color:var(--primary-color); margin-bottom:1rem;">Your Report is Ready! 🎉</h2>
+          <p style="color:var(--text-muted); margin-bottom:2rem;">
+            We've calculated the localized base cost and methodology multipliers. Enter your work email to receive the detailed unit price breakdown PDF.
+          </p>
+          
+          <div class="input-group">
+            <input type="email" id="user-email" placeholder="name@company.com" required>
+          </div>
+          
+          <button id="send-report-btn" class="estimate-btn">Send Me The Report</button>
+          <p style="margin-top:1rem; font-size:0.8rem; color:#94a3b8;">No spam. Just high-quality Asian research insights.</p>
+        </div>
+      </div>
+
+      <!-- Funnel Step 3: Success & Marketing CTA -->
+      <div id="step-3" class="funnel-step">
+        <div style="text-align:center; padding: 2rem 0;">
+          <h2 style="color: var(--primary-color); margin-bottom:1rem;">Report Sent! 📧</h2>
+          <p style="color:var(--text-muted); margin-bottom:2rem;">Check your inbox shortly.</p>
+          
+          <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:1.5rem; border-radius:16px; text-align:left;">
+            <h4 style="color:var(--primary-color); margin-bottom:0.5rem; font-size:1.1rem;">Need to optimize this budget?</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1rem;">
+              Managing multi-country research often means dealing with multiple vendors and bloated margins.
+              <br><br>
+              Meet <strong>Direct Research Korea (DRK)</strong>. As your flexible, pan-Asian partner, we execute high-quality, agile research across East and Southeast Asia.
+            </p>
+            <a href="#" style="background:var(--primary-color); display:block; text-align:center; color:white; padding:1rem; border-radius:12px; font-weight:600; text-decoration:none;">Book a 15-min Discovery Call</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
