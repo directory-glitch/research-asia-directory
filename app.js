@@ -118,11 +118,24 @@ function initApplication() {
             country: data.country_name,
             org: data.org // 기업 접속망 확인용 (B2B 의도 데이터 파악 핵심)
         };
-        sendTrackingData("page_view", { location: userLocation });
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const agencyId = urlParams.get('id');
+        
+        const pageViewData = {
+            url: window.location.href,
+            path: window.location.pathname,
+            referrer: document.referrer || "direct"
+        };
+        if (agencyId) {
+            pageViewData.agency_id = agencyId;
+        }
+        
+        sendTrackingData("page_view", pageViewData);
     })
     .catch(err => console.error("Location tracking blocked/failed"));
 
-  // 트래킹 전송 공통 함수
+  // 트래킹 전송 공통 함수 (전역 노출)
   const sendTrackingData = (eventType, payload) => {
       const dataToLog = {
           event: eventType,
@@ -137,6 +150,7 @@ function initApplication() {
           body: JSON.stringify(dataToLog)
       }).catch(e => console.error(e));
   };
+  window.sendTrackingData = sendTrackingData;
 
 
   // Search & Filter Logic

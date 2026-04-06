@@ -213,6 +213,18 @@
           websiteBtn.style.background = '#64748B'; // 회색톤으로 대체
           websiteBtn.style.display = "inline-block";
       }
+      
+      // 웹사이트 방문 클릭 트래킹
+      websiteBtn.addEventListener('click', () => {
+          if (window.sendTrackingData) {
+              window.sendTrackingData("action", {
+                  action_type: "click_visit_website",
+                  agency_id: agency.id,
+                  agency_name: agency.name,
+                  description: `${agency.name} 웹사이트 이동 버튼 클릭`
+              });
+          }
+      });
 
 
 
@@ -252,7 +264,7 @@
       if (agency.caseStudies && agency.caseStudies.length > 0) {
           const studiesToDisplay = agency.caseStudies.slice(0, 4);
           caseStudiesHTML = studiesToDisplay.map(study => `
-            <a href="${study.url}" target="_blank" style="display:block; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:6px; color:var(--primary-color); text-decoration:none; font-weight:600; font-size:0.95rem; background:#fff;">
+            <a href="${study.url}" target="_blank" class="case-study-link" style="display:block; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:6px; color:var(--primary-color); text-decoration:none; font-weight:600; font-size:0.95rem; background:#fff;">
               📄 ${study.title} <span style="float:right; color:var(--text-muted);">↗</span>
             </a>
           `).join('');
@@ -264,6 +276,20 @@
           `;
       }
       document.getElementById('d-casestudies').innerHTML = caseStudiesHTML;
+      
+      // 케이스 스터디 클릭 트래킹
+      document.querySelectorAll('.case-study-link').forEach(link => {
+          link.addEventListener('click', (e) => {
+              if (window.sendTrackingData) {
+                  window.sendTrackingData("action", {
+                      action_type: "click_case_study",
+                      agency_id: agency.id,
+                      agency_name: agency.name,
+                      description: `${agency.name} 케이스 스터디 클릭: ${e.currentTarget.innerText.replace('↗', '').trim()}`
+                  });
+              }
+          });
+      });
 
       // ===== RFQ Modal Logic =====
       const rfqOverlay = document.getElementById('rfq-overlay');
@@ -284,6 +310,16 @@
           rfqOverlay.classList.add('active');
           step1.classList.add('active');
           step2.classList.remove('active');
+          
+          // RFQ 버튼 클릭 트래킹
+          if (window.sendTrackingData) {
+              window.sendTrackingData("action", {
+                  action_type: "click_rfq_button",
+                  agency_id: agency.id,
+                  agency_name: agency.name,
+                  description: `${agency.name} RFQ(견적요청) 브로셔/버튼 열기`
+              });
+          }
       });
 
       // Close Modal (X button, overlay click, and Done button)
