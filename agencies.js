@@ -3036,8 +3036,8 @@ const REAL_AGENCIES = [
   {
     "id": "embrain",
     "name": "Embrain",
-    "tagline": "엠브레인은 글로벌 네트워크를 가진 마크로밀 그룹의 일원입니다.",
-    "longDescription": "엠브레인은 글로벌 네트워크를 가진 마크로밀 그룹의 일원입니다. 엠브레인은 대만 EOLembrain을 설립하여 운영중이며, 말레이시아 지사를 설립하여 해외 사업 경쟁력을 강화하고 있습니다. 마크로밀 그룹은 한국, 일본, 중국, 태국, 인도네시아, 베트남 등 6개국 20개 네트워크를 가진 글로벌 기업입니다.",
+    "tagline": "Embrain is a member of the Macromill Group, a global network.",
+    "longDescription": "Embrain is a member of the Macromill Group, a global network. Embrain has established and operates EOLembrain in Taiwan and is strengthening its competitiveness in international markets by establishing a branch in Malaysia. The Macromill Group is a global enterprise with 20 networks across six countries, including South Korea, Japan, China, Thailand, Indonesia, and Vietnam.",
     "website": "http://www.embrain.com",
     "tags": [
       "AI",
