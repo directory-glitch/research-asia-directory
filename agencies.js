@@ -3778,8 +3778,8 @@ const REAL_AGENCIES = [
   {
     "id": "hankook-research",
     "name": "HANKOOK RESEARCH",
-    "tagline": "Hankook Research is the largest marketing and public opinion research firm in the Republic of Korea and has consistently...",
-    "longDescription": "Copyright © Hankook Research all rights reserved.",
+    "tagline": "Established in 1978, Hankook Research boasts a proud 47-year history and tradition.",
+    "longDescription": "Established in 1978, Hankook Research boasts a proud 47-year history and tradition. To keep pace with a rapidly changing society, corporations must develop products that consumers truly want, and governments must provide public services that meet citizens' expectations. As we expand beyond the domestic market into the global stage, interest in international consumers is also growing. We conduct approximately 60 overseas projects annually, building a global network across 70 countries to carry out consumer research worldwide.",
     "website": "http://www.hrc.co.kr",
     "tags": [
       "Consumers",
