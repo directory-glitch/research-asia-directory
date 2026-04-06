@@ -2840,14 +2840,25 @@ const REAL_AGENCIES = [
     "keyPeople": [],
     "services": [
       "Consumers",
-      "AI",
-      "Qualitative"
+      "Users",
+      "Focus Groups",
+      "Indepth Interview",
+      "Ethnography"
     ],
     "solutions": [
-      "Market Sizing",
-      "Customer Experience"
+      "U&A Studies",
+      "Concept Testing",
+      "Idea Workshop",
+      "Product & iHUT",
+      "UX / UI Testing"
     ],
-    "facility": [],
+    "facility": [
+      "Focus Group Room",
+      "Central Location Test",
+      "Viewing Room (One-way)",
+      "Online Streaming",
+      "Survey Platform"
+    ],
     "contact": "Jay Ahn",
     "email": "jacob.ahn@thedrk.com",
     "caseStudies": [
