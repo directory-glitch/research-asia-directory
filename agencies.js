@@ -2200,8 +2200,8 @@ const REAL_AGENCIES = [
   {
     "id": "coremind-co-ltd",
     "name": "COREMIND CO., LTD.",
-    "tagline": "Coremind is a full-service market research firm offering wide range of research services including qualitative fieldwork...",
-    "longDescription": "Your reliable research partner, CoreMIND Your reliable research partner",
+    "tagline": "CoreMIND, the reliable research partner providing insightful solutions. CoreMIND aspires to be a research firm that investigates the human mind and understands people.",
+    "longDescription": "CoreMIND, the reliable research partner providing insightful solutions. CoreMIND aspires to be a research firm that investigates the human mind and understands people. We have clever research professionals who have successfully managed research projects in a variety of fields. CoreMIND strives to maintain a researcher's original principles while providing clients with reliable research results based on a systematic investigation management system. We provide insight and consulting that can promote clients’ growth and development in addition to data collection-oriented research.",
     "website": "http://www.coremind.co.kr",
     "tags": [
       "Focus Groups",
@@ -3036,8 +3036,8 @@ const REAL_AGENCIES = [
   {
     "id": "embrain",
     "name": "Embrain",
-    "tagline": "Market research and field services provider.",
-    "longDescription": "webmaster@embrain.com Copyright(C) MACROMILL EMBRAIN All Right Reserved.",
+    "tagline": "엠브레인은 글로벌 네트워크를 가진 마크로밀 그룹의 일원입니다.",
+    "longDescription": "엠브레인은 글로벌 네트워크를 가진 마크로밀 그룹의 일원입니다. 엠브레인은 대만 EOLembrain을 설립하여 운영중이며, 말레이시아 지사를 설립하여 해외 사업 경쟁력을 강화하고 있습니다. 마크로밀 그룹은 한국, 일본, 중국, 태국, 인도네시아, 베트남 등 6개국 20개 네트워크를 가진 글로벌 기업입니다.",
     "website": "http://www.embrain.com",
     "tags": [
       "AI",
