@@ -248,7 +248,7 @@
 <body>
 
   <div class="update-page">
-    <a href="index.html" class="back-link">??Back to Directory</a>
+    <a href="index.html" class="back-link">← Back to Directory</a>
 
     <h1>Update Your Agency Profile</h1>
     <p class="subtitle">
@@ -257,8 +257,8 @@
     </p>
 
     <div class="notice">
-      <strong>?뱥 How it works:</strong> Fill out the form below with your updated information. 
-      Our team will review and verify your submission, then update your profile within 1?? business days.
+      <strong>📋 How it works:</strong> Fill out the form below with your updated information. 
+      Our team will review and verify your submission, then update your profile within 1–2 business days.
       You will only need to fill in the fields you want to update.
     </div>
 
@@ -291,7 +291,7 @@
             </label>
             <input type="text" id="company-name" required placeholder="Select from list or type to search..." list="agency-list">
             <datalist id="agency-list"></datalist>
-            <small id="new-agency-hint" style="display:none; color:#059669; font-size:0.75rem; margin-top:0.3rem;">?뱷 New agency mode ??type your company name freely.</small>
+            <small id="new-agency-hint" style="display:none; color:#059669; font-size:0.75rem; margin-top:0.3rem;">📝 New agency mode — type your company name freely.</small>
           </div>
         </div>
         <div class="form-row">
@@ -302,7 +302,7 @@
           <div class="form-group">
             <label>Country / Region</label>
             <select id="company-region">
-              <option value="">??Select ??/option>
+              <option value="">— Select —</option>
               <option value="Australia">Australia</option>
               <option value="Cambodia">Cambodia</option>
               <option value="China">China</option>
@@ -352,11 +352,11 @@
           <div class="form-group">
             <label>Number of Employees</label>
             <select id="employees">
-              <option value="">??Select ??/option>
-              <option value="1-10">1 ??10</option>
-              <option value="11-50">11 ??50</option>
-              <option value="51-200">51 ??200</option>
-              <option value="201-500">201 ??500</option>
+              <option value="">— Select —</option>
+              <option value="1-10">1 – 10</option>
+              <option value="11-50">11 – 50</option>
+              <option value="51-200">51 – 200</option>
+              <option value="201-500">201 – 500</option>
               <option value="500+">500+</option>
             </select>
           </div>
@@ -505,12 +505,12 @@
 
     <!-- Success Message (shown after submit) -->
     <div class="success-message" id="success-message">
-      <h2>??Submission Received!</h2>
+      <h2>✅ Submission Received!</h2>
       <p>
         Thank you for updating your agency profile. Our team will review your submission 
-        and apply the changes within 1?? business days.
+        and apply the changes within 1–2 business days.
         <br><br>
-        <a href="index.html" style="color: var(--primary-color); font-weight: 600;">??Return to Directory</a>
+        <a href="index.html" style="color: var(--primary-color); font-weight: 600;">← Return to Directory</a>
       </p>
     </div>
   </div>
@@ -528,7 +528,7 @@
         input.removeAttribute('list');
         input.value = '';
         input.placeholder = 'Type your new company name...';
-        btn.textContent = '??Back to List';
+        btn.textContent = '↩ Back to List';
         btn.style.background = '#059669';
         btn.style.color = '#fff';
         btn.style.borderColor = '#059669';
@@ -560,7 +560,7 @@
     };
     document.head.appendChild(script);
 
-    // Form submission ??Google Sheets Webhook
+    // Form submission → Google Sheets Webhook
     const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzOUuRcjpgdLRIUc7vY5ayJ4XMS1kytqjKSGIsYunZZl-GEfUqxcMuwG-vkl-hdUTWciA/exec';
 
       // Checkbox Limit Enforcement (Max 5 per limit-group)
