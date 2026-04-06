@@ -134,8 +134,6 @@ function initApplication() {
       // 실제 웹훅 발송
       fetch(WEBHOOK_URL, {
           method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
           body: JSON.stringify(dataToLog)
       }).catch(e => console.error(e));
   };
