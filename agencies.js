@@ -100,8 +100,8 @@ const REAL_AGENCIES = [
   {
     "id": "abn-korea-ltd",
     "name": "ABN KOREA LTD.",
-    "tagline": "About ABN Korea\n\nABN Korea is a marketing research firm led by former executives and experts from GfK Korea and Synovate...",
-    "longDescription": "신뢰할 수 있는 데이터, 과학적인 분석 시장 에이비엔임팩트코리아 주식회사(ABN Impact Korea. Ltd) 서울 종로구 새문안로 82 (신문로1가)  19층(03185)",
+    "tagline": "ABN Korea provides consumer and market analysis through tailored approaches that range from simple, quick surveys to complex, multi-stage research projects.",
+    "longDescription": "ABN Korea provides consumer and market analysis through tailored approaches that range from simple, quick surveys to complex, multi-stage research projects. As a full-service marketing research consultancy, we delve deep into our clients' challenges and issues. Our goal is to deliver customer-centric intelligence by utilizing diverse research methodologies and scientific market analysis.",
     "website": "http://m.abnkr.com/",
     "tags": [
       "Focus Groups",
