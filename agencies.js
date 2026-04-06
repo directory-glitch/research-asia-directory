@@ -6380,8 +6380,8 @@ const REAL_AGENCIES = [
   {
     "id": "research-a",
     "name": "RESEARCH A",
-    "tagline": "Research-A is a qualitative boutique that is consist of 4 of highly experienced moderators with vast experiences in glob...",
-    "longDescription": "and building competitive position by establishing a marketing strategy for Brenda_Choi@research-a.com",
+    "tagline": "Research A is a qualitative boutique research firm which is consist of 4 moderators who have worked in global research firms for more than 15 years.",
+    "longDescription": "Research A is a qualitative boutique research firm which is consist of 4 moderators who have worked in global research firms for more than 15 years. Research agencies Research A's moderators worked are Kantar, Ipsos, Embrain, Research International and HRC. The key strength of Research-A is the quality of moderation and the analysis enabled by the highly experienced moderators with vast experience across categories and clients.",
     "website": "http://research-a.kr/",
     "tags": [
       "Focus Groups",
