@@ -172,10 +172,16 @@ body {
   gap: 6px;
 }
 
+.clear-filter-btn:not([disabled]) {
+  background: #059669;
+  color: white;
+  border-color: #059669;
+}
+
 .clear-filter-btn:not([disabled]):hover {
-  background: #f1f5f9;
-  color: var(--text-main);
-  border-color: #cbd5e1;
+  background: #047857;
+  color: white;
+  border-color: #047857;
 }
 
 .clear-filter-btn[disabled] {
