@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agency Detail | Research Asia</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- agencies.js 먼저 로드하여 REAL_AGENCIES 전역 변수를 확보 -->
+  <!-- agencies.js 먼�? 로드?�여 REAL_AGENCIES ?�역 변?��? ?�보 -->
   <script src="agencies.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP607BL8P9"></script>
@@ -41,7 +41,7 @@
       
       <!-- About Card -->
       <div class="card">
-        <h4><span style="font-size:1.5rem;">📖</span> About the Agency</h4>
+        <h4><span style="font-size:1.5rem;">?��</span> About the Agency</h4>
         <div id="d-desc" style="line-height:1.8; color:var(--text-muted); font-size:1.05rem; white-space:pre-wrap;">
         </div>
       </div>
@@ -49,27 +49,27 @@
       <div class="card">
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
           <div>
-            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">📊</span> Services</h4>
+            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">?��</span> Services</h4>
             <div id="d-services"></div>
           </div>
           <div>
-            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">💡</span> Solutions</h4>
+            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">?��</span> Solutions</h4>
             <div id="d-solutions"></div>
           </div>
           <div>
-            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">🏢</span> Facility</h4>
+            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">?��</span> Facility</h4>
             <div id="d-facility"></div>
           </div>
         </div>
       </div>
       
       <div class="card">
-        <h4><span style="font-size:1.5rem;">🤝</span> Insights & Case Study</h4>
+        <h4><span style="font-size:1.5rem;">?��</span> Insights & Case Study</h4>
         <div id="d-casestudies" style="display:flex; flex-direction:column; gap:0.6rem; margin-top:1rem;"></div>
       </div>
 
       <div class="card">
-        <h4><span style="font-size:1.5rem;">🏢</span> Company Overview</h4>
+        <h4><span style="font-size:1.5rem;">?��</span> Company Overview</h4>
         <ul style="list-style:none; line-height:2.5; color:var(--text-muted);">
           <li style="display:flex; justify-content:space-between; border-bottom:1px solid #E2E8F0; padding-bottom:8px; margin-bottom:8px;">
             <span>Employees</span>
@@ -159,7 +159,7 @@
 
       <!-- RFQ Step 2: Success Message -->
       <div id="rfq-step-2" class="funnel-step" style="text-align:center; padding: 3rem 1rem;">
-        <div style="font-size: 3.5rem; margin-bottom: 1rem;">✅</div>
+        <div style="font-size: 3.5rem; margin-bottom: 1rem;">??/div>
         <h2 style="color:var(--text-main); margin-bottom: 0.5rem;">Request Sent!</h2>
         <p style="color:var(--text-muted);">The agency will review your details and get back to you within 24-48 hours with an estimate.</p>
         <button class="estimate-btn" id="done-rfq-btn" style="margin-top: 2rem; background: var(--secondary-color);">Close</button>
@@ -168,13 +168,13 @@
     </div>
   </div>
 
-  <!-- Inline Script - agencies.js가 동기적으로 먼저 로드되어 REAL_AGENCIES가 확보됨 -->
+  <!-- Inline Script - agencies.js가 ?�기?�으�?먼�? 로드?�어 REAL_AGENCIES가 ?�보??-->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get('id');
       
-      // agencies.js에서 REAL_AGENCIES 직접 사용 (app.js의 비동기 로딩에 의존하지 않음)
+      // agencies.js?�서 REAL_AGENCIES 직접 ?�용 (app.js??비동�?로딩???�존?��? ?�음)
       const allAgencies = (typeof REAL_AGENCIES !== "undefined") ? REAL_AGENCIES : [];
       const agency = allAgencies.find(a => a.id === id);
       
@@ -192,7 +192,7 @@
       document.getElementById('d-tagline').innerText = agency.tagline;
       document.getElementById('d-region').innerHTML = `<span>${agency.region || "Asia-Pacific"}</span>`;
       
-      // CTA Box 다이내믹 타이틀 업데이트
+      // CTA Box ?�이?��? ?�?��? ?�데?�트
       document.getElementById('cta-title').innerHTML = `Get a project estimate<br><span style="font-size:1.05rem; font-weight:400; color:#94A3B8;">from ${agency.name}</span>`;
 
       // ===== Deep Data Binding =====
@@ -207,11 +207,9 @@
           websiteBtn.innerHTML = 'Visit Website &rarr;';
           websiteBtn.style.display = "inline-block";
       } else {
-          // 구글 검색으로 대체
-          websiteBtn.href = `https://www.google.com/search?q=${encodeURIComponent(agency.name + " research")}`;
-          websiteBtn.innerHTML = 'Search on Google 🔍';
-          websiteBtn.style.background = '#64748B'; // 회색톤으로 대체
-          websiteBtn.style.display = "inline-block";
+          // 구�? 검?�으�??��?          websiteBtn.href = `https://www.google.com/search?q=${encodeURIComponent(agency.name + " research")}`;
+          websiteBtn.innerHTML = 'Search on Google ?��';
+          websiteBtn.style.background = '#64748B'; // ?�색?�으�??��?          websiteBtn.style.display = "inline-block";
       }
 
 
@@ -221,7 +219,7 @@
       
       // ===== Service Lines (DB 컬럼 기반) =====
       const renderList = (arr) => arr && arr.length > 0
-        ? arr.map(s => `<div style="padding: 0.6rem 1rem; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 0.6rem; font-weight: 600; font-size: 0.85rem; color: var(--primary-color); display: flex; align-items: center; letter-spacing: 0.02em;"><span style="color: #10B981; margin-right: 8px; font-size: 1rem;">✓</span> ${s.toUpperCase()}</div>`).join('')
+        ? arr.map(s => `<div style="padding: 0.6rem 1rem; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 0.6rem; font-weight: 600; font-size: 0.85rem; color: var(--primary-color); display: flex; align-items: center; letter-spacing: 0.02em;"><span style="color: #10B981; margin-right: 8px; font-size: 1rem;">??/span> ${s.toUpperCase()}</div>`).join('')
         : `<div style="color:var(--text-muted); font-size:0.9rem; padding: 0.5rem 0;">No data</div>`;
 
       document.getElementById('d-services').innerHTML = renderList(agency.services);
@@ -230,8 +228,8 @@
 
       // ===== Key People & Emails =====
       if ((agency.keyPeople && agency.keyPeople.length > 0) || (agency.emails && agency.emails.length > 0)) {
-         let kpHTML = (agency.keyPeople || []).map(p => `<div><span style="font-size:1.1em; margin-right:6px;">👤</span> ${p.name} </div>`).join('');
-         let emailHTML = (agency.emails || []).map(e => `<div><span style="font-size:1.1em; margin-right:6px;">✉️</span> <a href="mailto:${e}" style="color:var(--secondary-color); text-decoration:none;">${e}</a></div>`).join('');
+         let kpHTML = (agency.keyPeople || []).map(p => `<div><span style="font-size:1.1em; margin-right:6px;">?��</span> ${p.name} </div>`).join('');
+         let emailHTML = (agency.emails || []).map(e => `<div><span style="font-size:1.1em; margin-right:6px;">?�️</span> <a href="mailto:${e}" style="color:var(--secondary-color); text-decoration:none;">${e}</a></div>`).join('');
          document.getElementById('d-keypeople').innerHTML = kpHTML + emailHTML;
          document.getElementById('d-keypeople-wrapper').style.display = "flex";
       } else {
@@ -248,12 +246,11 @@
 
       // ===== Insights & Case Studies =====
       let caseStudiesHTML = "";
-      // 최대 4개까지만 렌더링
-      if (agency.caseStudies && agency.caseStudies.length > 0) {
+      // 최�? 4개까지�??�더�?      if (agency.caseStudies && agency.caseStudies.length > 0) {
           const studiesToDisplay = agency.caseStudies.slice(0, 4);
           caseStudiesHTML = studiesToDisplay.map(study => `
             <a href="${study.url}" target="_blank" style="display:block; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:6px; color:var(--primary-color); text-decoration:none; font-weight:600; font-size:0.95rem; background:#fff;">
-              📄 ${study.title} <span style="float:right; color:var(--text-muted);">↗</span>
+              ?�� ${study.title} <span style="float:right; color:var(--text-muted);">??/span>
             </a>
           `).join('');
       } else {
@@ -312,7 +309,7 @@
           sendRfqBtn.innerHTML = "Sending...";
           sendRfqBtn.style.opacity = "0.7";
 
-          // 구글 시트 웹훅 URL
+          // 구�? ?�트 ?�훅 URL
           const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwp0YK4NnZvwLs-YDLNlYrYl8g13iafc1RK7Syxo9492I7BT_cJB2t4W8tphoNjxtBOEg/exec";
 
           const payload = {
@@ -335,7 +332,7 @@
                       body: JSON.stringify(payload)
                   });
               } else {
-                  // 웹훅 주소가 아직 입력되지 않은 상태에서는 1초 후 성공 화면으로 넘김 (테스트용)
+                  // ?�훅 주소가 ?�직 ?�력?��? ?��? ?�태?�서??1�????�공 ?�면?�로 ?��? (?�스?�용)
                   await new Promise(r => setTimeout(r, 1000));
                   console.warn("Webhook URL not set, simulated success.");
               }
@@ -383,7 +380,7 @@
     </div>
     <div class="container" style="border-top: 1px solid var(--border-color); margin-top: 3rem; padding-top: 2rem; color: var(--text-muted); font-size: 0.85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
       <div>&copy; 2026 Research Asia Directory. All rights reserved.</div>
-      <div>Operated by Direct Research Korea</div>
+      
     </div>
   </footer>
 
