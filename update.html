@@ -561,7 +561,7 @@
     document.head.appendChild(script);
 
     // Form submission → Google Sheets Webhook
-    const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzOUuRcjpgdLRIUc7vY5ayJ4XMS1kytqjKSGIsYunZZl-GEfUqxcMuwG-vkl-hdUTWciA/exec';
+    const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzVRecGgHCWpWYJrskDsgt3f2vYg3W9rkEUhjImo5T_AXLtGwzpraZmvikzY8lIRiuYwA/exec';
 
       // Checkbox Limit Enforcement (Max 5 per limit-group)
       document.querySelectorAll('.limit-group').forEach(group => {
@@ -620,13 +620,19 @@
           status: 'Pending'
         };
 
+        const dataToLog = {
+          event: "agency_update",
+          timestamp: payload.timestamp,
+          data: payload
+        };
+
       try {
         if (WEBHOOK_URL) {
           await fetch(WEBHOOK_URL, {
             method: 'POST',
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
+            body: JSON.stringify(dataToLog)
           });
         } else {
           console.log('WEBHOOK_URL not set. Payload:', payload);
