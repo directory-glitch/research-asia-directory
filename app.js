@@ -104,7 +104,7 @@ function initApplication() {
 
   // ============== DATA TRACKING LOGIC (Webhooks / Google Sheets) ==============
   // 정적 호스팅(가비아)에서는 DB가 없으므로 Make(Integromat), Zapier 또는 구글 앱스 스크립트 웹훅 URL로 데이터를 쏩니다.
-  const WEBHOOK_URL = "https://your-webhook-url-here.com"; // TODO: 구글 시트 웹훅 주소로 교체하세요
+  const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwp0YK4NnZvwLs-YDLNlYrYl8g13iafc1RK7Syxo9492I7BT_cJB2t4W8tphoNjxtBOEg/exec";
 
   let userLocation = null;
 
@@ -130,14 +130,14 @@ function initApplication() {
           location: userLocation,
           data: payload
       };
-      console.log(`[Data Tracked - ${eventType}]`, dataToLog); // 개발자 도구 확인용
       
-      // 실제 웹훅 발송 (URL 세팅 후 주석 해제)
-      // fetch(WEBHOOK_URL, {
-      //     method: "POST",
-      //     headers: { "Content-Type": "application/json" },
-      //     body: JSON.stringify(dataToLog)
-      // }).catch(e => console.error(e));
+      // 실제 웹훅 발송
+      fetch(WEBHOOK_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(dataToLog)
+      }).catch(e => console.error(e));
   };
 
 
