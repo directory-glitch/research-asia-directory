@@ -580,7 +580,7 @@ const REAL_AGENCIES = [
     "id": "alvin-market",
     "name": "ALVIN MARKET",
     "tagline": "Market research and field services provider.",
-    "longDescription": "Компания Alvin Market создана в 2006 году и специализируется на оказании услуг в сфере маркетинговых исследований консалтинга. Работая на этом рынке, мы поставили перед собой задачу создания компании с добрым именем, завоевания уважения и доверия со стороны клиентов.",
+    "longDescription": "\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f Alvin Market \u0441\u043e\u0437\u0434\u0430\u043d\u0430 \u0432 2006 \u0433\u043e\u0434\u0443 \u0438 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043d\u0430 \u043e\u043a\u0430\u0437\u0430\u043d\u0438\u0438 \u0443\u0441\u043b\u0443\u0433 \u0432 \u0441\u0444\u0435\u0440\u0435 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0445 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u043a\u043e\u043d\u0441\u0430\u043b\u0442\u0438\u043d\u0433\u0430. \u0420\u0430\u0431\u043e\u0442\u0430\u044f \u043d\u0430 \u044d\u0442\u043e\u043c \u0440\u044b\u043d\u043a\u0435, \u043c\u044b \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u043b\u0438 \u043f\u0435\u0440\u0435\u0434 \u0441\u043e\u0431\u043e\u0439 \u0437\u0430\u0434\u0430\u0447\u0443 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u0441 \u0434\u043e\u0431\u0440\u044b\u043c \u0438\u043c\u0435\u043d\u0435\u043c, \u0437\u0430\u0432\u043e\u0435\u0432\u0430\u043d\u0438\u044f \u0443\u0432\u0430\u0436\u0435\u043d\u0438\u044f \u0438 \u0434\u043e\u0432\u0435\u0440\u0438\u044f \u0441\u043e \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432.",
     "website": "https://alvin.kz/",
     "tags": [
       "Consumers",
@@ -615,8 +615,8 @@ const REAL_AGENCIES = [
   {
     "id": "anka-insights",
     "name": "ANKA INSIGHTS",
-    "tagline": "ANKA Insights is India–based market research firm, specializing in Qualitative and Quantitative research. Services span ...",
-    "longDescription": "ANKA Insights is India–based market research firm, specializing in Qualitative and Quantitative research. Services span consumer insights, and research operations—including survey programming, data collection, advanced analytics, and reporting.",
+    "tagline": "ANKA Insights is India\u2013based market research firm, specializing in Qualitative and Quantitative research. Services span ...",
+    "longDescription": "ANKA Insights is India\u2013based market research firm, specializing in Qualitative and Quantitative research. Services span consumer insights, and research operations\u2014including survey programming, data collection, advanced analytics, and reporting.",
     "website": "",
     "tags": [
       "Consumers",
@@ -1324,7 +1324,7 @@ const REAL_AGENCIES = [
     "id": "beacon-associates-inc",
     "name": "BEACON ASSOCIATES, INC.",
     "tagline": "We are your data collection partners, supporting your market research needs for the Japanese market fully in-house. We f...",
-    "longDescription": "Copyright © 2012 - 2026 Beacon Associates, Inc. Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.",
+    "longDescription": "Copyright \u00a9 2012 - 2026 Beacon Associates, Inc. Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.",
     "website": "https://www.beaconassociates.jp/",
     "tags": [
       "AI",
@@ -1387,7 +1387,7 @@ const REAL_AGENCIES = [
     "id": "bigc",
     "name": "BIGC",
     "tagline": "Market research and field services provider.",
-    "longDescription": "©2016 BIGC. All Rights Reserved.",
+    "longDescription": "\u00a92016 BIGC. All Rights Reserved.",
     "website": "http://www.bigc.com.tw/",
     "tags": [
       "Consumers",
@@ -1423,7 +1423,7 @@ const REAL_AGENCIES = [
     "id": "bisam-central-asia",
     "name": "BISAM Central Asia",
     "tagline": "Market research and field services provider.",
-    "longDescription": "Центр бизнес - информации, социологических и маркетинговых исследований Маркетинговые исследования Социологические исследования",
+    "longDescription": "\u0426\u0435\u043d\u0442\u0440 \u0431\u0438\u0437\u043d\u0435\u0441 - \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438, \u0441\u043e\u0446\u0438\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0438 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0445 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u0421\u043e\u0446\u0438\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f",
     "website": "http://www.bisam.kz/",
     "tags": [
       "Consumers",
@@ -1453,8 +1453,8 @@ const REAL_AGENCIES = [
   {
     "id": "blackbox-research-pte-ltd",
     "name": "BLACKBOX RESEARCH PTE LTD",
-    "tagline": "Blackbox is Southeast Asia’s leading decision intelligence provider, delivering decision science solutions and community...",
-    "longDescription": "Blackbox is Southeast Asia’s leading decision intelligence provider, delivering decision science solutions and community-wide perspectives on contemporary problems and challenges. As a sophisticated provider of data insights, we work closely with businesses, governments, regulators, and non-profit organisations.\n\nWe monitor emerging trends both regionally and globally with the main aim of signalling potential changes of significance before they occur. For over 20 years, we have gathered data, constructed advanced analytical approaches, and developed a deep understanding of Asia and its diverse people.\n\nAs the region transforms once again in the 2020s, Blackbox can give you a front-row seat to all you need to know and help make your decisions the right ones.\n\nMake Decisions That Matter.\n\nFor more information, please visit us at http://www.blackbox.com.sg",
+    "tagline": "Blackbox is Southeast Asia\u2019s leading decision intelligence provider, delivering decision science solutions and community...",
+    "longDescription": "Blackbox is Southeast Asia\u2019s leading decision intelligence provider, delivering decision science solutions and community-wide perspectives on contemporary problems and challenges. As a sophisticated provider of data insights, we work closely with businesses, governments, regulators, and non-profit organisations.\n\nWe monitor emerging trends both regionally and globally with the main aim of signalling potential changes of significance before they occur. For over 20 years, we have gathered data, constructed advanced analytical approaches, and developed a deep understanding of Asia and its diverse people.\n\nAs the region transforms once again in the 2020s, Blackbox can give you a front-row seat to all you need to know and help make your decisions the right ones.\n\nMake Decisions That Matter.\n\nFor more information, please visit us at http://www.blackbox.com.sg",
     "website": "http://www.blackbox.com.sg",
     "tags": [
       "AI",
@@ -1612,7 +1612,7 @@ const REAL_AGENCIES = [
     "id": "brainactive",
     "name": "BRAINACTIVE",
     "tagline": "Brainactive is an AI-enhanced survey platform designed to streamline the research process. It enables organizations to b...",
-    "longDescription": "Use Brainactive’s AI asisstant to build professional questionnaires and send them to people around the world in minutes. Validate your idea with real consumers in minutes Access +300 million consumers globally, gain key insights and optimise your decisions with a user-friendly AI-enhanced survey builder.",
+    "longDescription": "Use Brainactive\u2019s AI asisstant to build professional questionnaires and send them to people around the world in minutes. Validate your idea with real consumers in minutes Access +300 million consumers globally, gain key insights and optimise your decisions with a user-friendly AI-enhanced survey builder.",
     "website": "https://www.brainactive.ai",
     "tags": [
       "Consumers",
@@ -1676,7 +1676,7 @@ const REAL_AGENCIES = [
     "id": "breeze-llc",
     "name": "BREEZE LLC",
     "tagline": "We are a team of professionals that is always seeking best-in-class quality. With a background of a boutique market rese...",
-    "longDescription": "ブリーズは、マーケティングリサーチ（市場調査）を専門とする会社です。高い洞察力とかゆい所に手の届くきめ細かい対応は、国内外のクライアント様から高く評価いただいています。ご相談やお見積は無料ですので、お気軽にお問い合わせください！ ブリーズは、マーケティングリサーチ（市場調査）を専門とする会社です。高い洞察力とかゆい所に手の届くきめ細かい対応は、国内外のクライアント様から高く評価いただいています。 ご相談やお見積は無料ですので、お気軽にお問い合わせください！",
+    "longDescription": "\u30d6\u30ea\u30fc\u30ba\u306f\u3001\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ea\u30b5\u30fc\u30c1\uff08\u5e02\u5834\u8abf\u67fb\uff09\u3092\u5c02\u9580\u3068\u3059\u308b\u4f1a\u793e\u3067\u3059\u3002\u9ad8\u3044\u6d1e\u5bdf\u529b\u3068\u304b\u3086\u3044\u6240\u306b\u624b\u306e\u5c4a\u304f\u304d\u3081\u7d30\u304b\u3044\u5bfe\u5fdc\u306f\u3001\u56fd\u5185\u5916\u306e\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u69d8\u304b\u3089\u9ad8\u304f\u8a55\u4fa1\u3044\u305f\u3060\u3044\u3066\u3044\u307e\u3059\u3002\u3054\u76f8\u8ac7\u3084\u304a\u898b\u7a4d\u306f\u7121\u6599\u3067\u3059\u306e\u3067\u3001\u304a\u6c17\u8efd\u306b\u304a\u554f\u3044\u5408\u308f\u305b\u304f\u3060\u3055\u3044\uff01 \u30d6\u30ea\u30fc\u30ba\u306f\u3001\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ea\u30b5\u30fc\u30c1\uff08\u5e02\u5834\u8abf\u67fb\uff09\u3092\u5c02\u9580\u3068\u3059\u308b\u4f1a\u793e\u3067\u3059\u3002\u9ad8\u3044\u6d1e\u5bdf\u529b\u3068\u304b\u3086\u3044\u6240\u306b\u624b\u306e\u5c4a\u304f\u304d\u3081\u7d30\u304b\u3044\u5bfe\u5fdc\u306f\u3001\u56fd\u5185\u5916\u306e\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u69d8\u304b\u3089\u9ad8\u304f\u8a55\u4fa1\u3044\u305f\u3060\u3044\u3066\u3044\u307e\u3059\u3002 \u3054\u76f8\u8ac7\u3084\u304a\u898b\u7a4d\u306f\u7121\u6599\u3067\u3059\u306e\u3067\u3001\u304a\u6c17\u8efd\u306b\u304a\u554f\u3044\u5408\u308f\u305b\u304f\u3060\u3055\u3044\uff01",
     "website": "http://breeze-mr.sub.jp/en/",
     "tags": [
       "Focus Groups",
@@ -1774,7 +1774,7 @@ const REAL_AGENCIES = [
     "id": "bashkirova-partners",
     "name": "Bashkirova Partners",
     "tagline": "Market research and field services provider.",
-    "longDescription": "Вафли трубочкой — это один из самых любимых десертов, который вызывает теплые воспоминания о детстве и семейных чаепитиях. Их хрустящая структура, неж...",
+    "longDescription": "\u0412\u0430\u0444\u043b\u0438 \u0442\u0440\u0443\u0431\u043e\u0447\u043a\u043e\u0439 \u2014 \u044d\u0442\u043e \u043e\u0434\u0438\u043d \u0438\u0437 \u0441\u0430\u043c\u044b\u0445 \u043b\u044e\u0431\u0438\u043c\u044b\u0445 \u0434\u0435\u0441\u0435\u0440\u0442\u043e\u0432, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0432\u044b\u0437\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043f\u043b\u044b\u0435 \u0432\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u044f \u043e \u0434\u0435\u0442\u0441\u0442\u0432\u0435 \u0438 \u0441\u0435\u043c\u0435\u0439\u043d\u044b\u0445 \u0447\u0430\u0435\u043f\u0438\u0442\u0438\u044f\u0445. \u0418\u0445 \u0445\u0440\u0443\u0441\u0442\u044f\u0449\u0430\u044f \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0430, \u043d\u0435\u0436...",
     "website": "http://www.bashkirova-partners.ru/en/",
     "tags": [
       "Consumers",
@@ -1979,7 +1979,7 @@ const REAL_AGENCIES = [
     "id": "cessi",
     "name": "CESSI",
     "tagline": "Market research and field services provider.",
-    "longDescription": "CESSI проводит Маркетинговые исследования\nОпросы\nТесты\nФокус-группы\nСоциологические исследования\nТелефонные опросы\nОнлайн опросы\nвсероссийские опросы\nрегиональные опросы\nисследования для кадровых служб\nмониторинги\nпанельные исследования\nбизнес опросы\nоценка удовлетворенности потребителей\nисследования среди стейкхолдеров\nбазы результатов опросов",
+    "longDescription": "CESSI \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u0442 \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f\n\u041e\u043f\u0440\u043e\u0441\u044b\n\u0422\u0435\u0441\u0442\u044b\n\u0424\u043e\u043a\u0443\u0441-\u0433\u0440\u0443\u043f\u043f\u044b\n\u0421\u043e\u0446\u0438\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f\n\u0422\u0435\u043b\u0435\u0444\u043e\u043d\u043d\u044b\u0435 \u043e\u043f\u0440\u043e\u0441\u044b\n\u041e\u043d\u043b\u0430\u0439\u043d \u043e\u043f\u0440\u043e\u0441\u044b\n\u0432\u0441\u0435\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u043e\u043f\u0440\u043e\u0441\u044b\n\u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0435 \u043e\u043f\u0440\u043e\u0441\u044b\n\u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u0434\u043b\u044f \u043a\u0430\u0434\u0440\u043e\u0432\u044b\u0445 \u0441\u043b\u0443\u0436\u0431\n\u043c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u043d\u0433\u0438\n\u043f\u0430\u043d\u0435\u043b\u044c\u043d\u044b\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f\n\u0431\u0438\u0437\u043d\u0435\u0441 \u043e\u043f\u0440\u043e\u0441\u044b\n\u043e\u0446\u0435\u043d\u043a\u0430 \u0443\u0434\u043e\u0432\u043b\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u0435\u0439\n\u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u0441\u0440\u0435\u0434\u0438 \u0441\u0442\u0435\u0439\u043a\u0445\u043e\u043b\u0434\u0435\u0440\u043e\u0432\n\u0431\u0430\u0437\u044b \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u0432 \u043e\u043f\u0440\u043e\u0441\u043e\u0432",
     "website": "http://cessi.ru/",
     "tags": [
       "Consumers",
@@ -2015,7 +2015,7 @@ const REAL_AGENCIES = [
     "id": "ciom-ltd",
     "name": "CIOM Ltd",
     "tagline": "Market research and field services provider.",
-    "longDescription": "Социальные опросы/Опросы общественного мнения Маркетинговые исследования/Исследования для бизнеса Качественные исследования",
+    "longDescription": "\u0421\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u043e\u043f\u0440\u043e\u0441\u044b/\u041e\u043f\u0440\u043e\u0441\u044b \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u043c\u043d\u0435\u043d\u0438\u044f \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f/\u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u0434\u043b\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430 \u041a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f",
     "website": "http://www.ciom.kz/",
     "tags": [
       "Consumers",
@@ -2075,7 +2075,7 @@ const REAL_AGENCIES = [
     "id": "cogencia-consulting-inc",
     "name": "COGENCIA CONSULTING INC.",
     "tagline": "Global Reach, Local Insights: Cogencia Inc. is your full-service market research partner in Asia and Africa. Expand your...",
-    "longDescription": "With 40 years of collective research and training experience, we have worked with Fortune 500 companies and multinational research agencies, been trained by thought leaders in the fields of competitive intelligence and market research, and delivered insights for different industries and sectors. Cogencia provides strategic insights to businesses and organizations. Our end-to-end market, social and stakeholder services cover the entire delivery cycle from planning to implementation. We support yo",
+    "longDescription": "With 40 years of collective research and training experience, we have worked with Fortune 500 companies and multinational research agencies, been trained by thought leaders in the fields of competitive intelligence and market research, and delivered insights for different industries and sectors. Cogencia provides strategic insights to businesses and organizations. Our end-to-end market, social and stakeholder services cover\u00a0the entire delivery cycle from planning to implementation. We support yo",
     "website": "http://cogenciainc.com",
     "tags": [
       "AI",
@@ -2138,7 +2138,7 @@ const REAL_AGENCIES = [
     "id": "consumer-behaviour-research-ltd",
     "name": "CONSUMER BEHAVIOUR RESEARCH LTD.",
     "tagline": "Independent market research agency providing specialized fieldwork and insight solutions in the region.",
-    "longDescription": "四半世紀以上にわたり培ってきた経験とノウハウを基に 消費者の動向、ニーズを最適な方法で調査・分析。お客様が抱えるビジネスの様々な課題を解決に導く情報をご提供いたします。 渋谷・新宿・新宿御苑・吉祥寺４か所の自社専用会場を持ち、各地のレンタルホールも使用しながら、年間に30,000人以上の会場調査(CLT)を実施しています。 CBRが所有する、主要都市２か所の会場調査専用モニタールームをお貸しします。いずれも駅近くの利便性にすぐれた会場。",
+    "longDescription": "\u56db\u534a\u4e16\u7d00\u4ee5\u4e0a\u306b\u308f\u305f\u308a\u57f9\u3063\u3066\u304d\u305f\u7d4c\u9a13\u3068\u30ce\u30a6\u30cf\u30a6\u3092\u57fa\u306b \u6d88\u8cbb\u8005\u306e\u52d5\u5411\u3001\u30cb\u30fc\u30ba\u3092\u6700\u9069\u306a\u65b9\u6cd5\u3067\u8abf\u67fb\u30fb\u5206\u6790\u3002\u304a\u5ba2\u69d8\u304c\u62b1\u3048\u308b\u30d3\u30b8\u30cd\u30b9\u306e\u69d8\u3005\u306a\u8ab2\u984c\u3092\u89e3\u6c7a\u306b\u5c0e\u304f\u60c5\u5831\u3092\u3054\u63d0\u4f9b\u3044\u305f\u3057\u307e\u3059\u3002 \u6e0b\u8c37\u30fb\u65b0\u5bbf\u30fb\u65b0\u5bbf\u5fa1\u82d1\u30fb\u5409\u7965\u5bfa\uff14\u304b\u6240\u306e\u81ea\u793e\u5c02\u7528\u4f1a\u5834\u3092\u6301\u3061\u3001\u5404\u5730\u306e\u30ec\u30f3\u30bf\u30eb\u30db\u30fc\u30eb\u3082\u4f7f\u7528\u3057\u306a\u304c\u3089\u3001\u5e74\u9593\u306b30,000\u4eba\u4ee5\u4e0a\u306e\u4f1a\u5834\u8abf\u67fb(CLT)\u3092\u5b9f\u65bd\u3057\u3066\u3044\u307e\u3059\u3002 CBR\u304c\u6240\u6709\u3059\u308b\u3001\u4e3b\u8981\u90fd\u5e02\uff12\u304b\u6240\u306e\u4f1a\u5834\u8abf\u67fb\u5c02\u7528\u30e2\u30cb\u30bf\u30fc\u30eb\u30fc\u30e0\u3092\u304a\u8cb8\u3057\u3057\u307e\u3059\u3002\u3044\u305a\u308c\u3082\u99c5\u8fd1\u304f\u306e\u5229\u4fbf\u6027\u306b\u3059\u3050\u308c\u305f\u4f1a\u5834\u3002",
     "website": "http://www.cbr.co.jp",
     "tags": [
       "Focus Groups",
@@ -2201,7 +2201,7 @@ const REAL_AGENCIES = [
     "id": "coremind-co-ltd",
     "name": "COREMIND CO., LTD.",
     "tagline": "CoreMIND, the reliable research partner providing insightful solutions. CoreMIND aspires to be a research firm that investigates the human mind and understands people.",
-    "longDescription": "CoreMIND, the reliable research partner providing insightful solutions. CoreMIND aspires to be a research firm that investigates the human mind and understands people. We have clever research professionals who have successfully managed research projects in a variety of fields. CoreMIND strives to maintain a researcher's original principles while providing clients with reliable research results based on a systematic investigation management system. We provide insight and consulting that can promote clients’ growth and development in addition to data collection-oriented research.",
+    "longDescription": "CoreMIND, the reliable research partner providing insightful solutions. CoreMIND aspires to be a research firm that investigates the human mind and understands people. We have clever research professionals who have successfully managed research projects in a variety of fields. CoreMIND strives to maintain a researcher's original principles while providing clients with reliable research results based on a systematic investigation management system. We provide insight and consulting that can promote clients\u2019 growth and development in addition to data collection-oriented research.",
     "website": "http://www.coremind.co.kr",
     "tags": [
       "Focus Groups",
@@ -2497,7 +2497,7 @@ const REAL_AGENCIES = [
     "id": "consumer-behavior-research-co-cbr",
     "name": "Consumer Behavior Research Co (CBR)",
     "tagline": "Market research and field services provider.",
-    "longDescription": "先进的数据分析工具：为了能提供最权威的研究结论，我们配备了先进的数... 产品通常拥有许多属性如价格、颜色、款式以及产品的特有功能等。 简博的互联网信息服务建立在十多年行业研究及服务基础之上，我们的研究行业涉广泛",
+    "longDescription": "\u5148\u8fdb\u7684\u6570\u636e\u5206\u6790\u5de5\u5177\uff1a\u4e3a\u4e86\u80fd\u63d0\u4f9b\u6700\u6743\u5a01\u7684\u7814\u7a76\u7ed3\u8bba\uff0c\u6211\u4eec\u914d\u5907\u4e86\u5148\u8fdb\u7684\u6570... \u4ea7\u54c1\u901a\u5e38\u62e5\u6709\u8bb8\u591a\u5c5e\u6027\u5982\u4ef7\u683c\u3001\u989c\u8272\u3001\u6b3e\u5f0f\u4ee5\u53ca\u4ea7\u54c1\u7684\u7279\u6709\u529f\u80fd\u7b49\u3002 \u7b80\u535a\u7684\u4e92\u8054\u7f51\u4fe1\u606f\u670d\u52a1\u5efa\u7acb\u5728\u5341\u591a\u5e74\u884c\u4e1a\u7814\u7a76\u53ca\u670d\u52a1\u57fa\u7840\u4e4b\u4e0a\uff0c\u6211\u4eec\u7684\u7814\u7a76\u884c\u4e1a\u6d89\u5e7f\u6cdb",
     "website": "http://www.cbr.com.cn/",
     "tags": [
       "Consumers",
@@ -2665,7 +2665,7 @@ const REAL_AGENCIES = [
     "id": "dataspring",
     "name": "DATASPRING",
     "tagline": "dataSpring, a leading provider of direct source panels and research solutions in Asia, specializes in high-quality marke...",
-    "longDescription": "dataSpring is Asia’s leading panel provider. We offer all-inclusive solutions to ensure the success of market researchers. Get to know your Asian panel insights provider. See our current openings and let’s build great things together!",
+    "longDescription": "dataSpring is Asia\u2019s leading panel provider. We offer all-inclusive solutions to ensure the success of market researchers. Get to know your Asian panel insights provider. See our current openings and let\u2019s build great things together!",
     "website": "https://www.d8aspring.com",
     "tags": [
       "Panel Management",
@@ -2694,7 +2694,7 @@ const REAL_AGENCIES = [
     "id": "dataway-horizon",
     "name": "DATAWAY HORIZON",
     "tagline": "Excellent Brand Reputation and Strong Market Influence Continuous Data Accumulation and Pluralistic Data Integration In-...",
-    "longDescription": "零点有数（Dataway）（股票代码：301169）是中国前沿的数据分析与决策智能服务机构。深耕公共事务和商业服务的诸多领域，以第三方评估为驱动、以解决应用场景中的关键问题为出发点，梳理和优化不同垂直行业的模型与算法。将30多年积累的专业知识实现“经验模型化，模型算法化，算法软件化”，推进决策科学化、服务高效化。",
+    "longDescription": "\u96f6\u70b9\u6709\u6570\uff08Dataway\uff09\uff08\u80a1\u7968\u4ee3\u7801\uff1a301169\uff09\u662f\u4e2d\u56fd\u524d\u6cbf\u7684\u6570\u636e\u5206\u6790\u4e0e\u51b3\u7b56\u667a\u80fd\u670d\u52a1\u673a\u6784\u3002\u6df1\u8015\u516c\u5171\u4e8b\u52a1\u548c\u5546\u4e1a\u670d\u52a1\u7684\u8bf8\u591a\u9886\u57df\uff0c\u4ee5\u7b2c\u4e09\u65b9\u8bc4\u4f30\u4e3a\u9a71\u52a8\u3001\u4ee5\u89e3\u51b3\u5e94\u7528\u573a\u666f\u4e2d\u7684\u5173\u952e\u95ee\u9898\u4e3a\u51fa\u53d1\u70b9\uff0c\u68b3\u7406\u548c\u4f18\u5316\u4e0d\u540c\u5782\u76f4\u884c\u4e1a\u7684\u6a21\u578b\u4e0e\u7b97\u6cd5\u3002\u5c0630\u591a\u5e74\u79ef\u7d2f\u7684\u4e13\u4e1a\u77e5\u8bc6\u5b9e\u73b0\u201c\u7ecf\u9a8c\u6a21\u578b\u5316\uff0c\u6a21\u578b\u7b97\u6cd5\u5316\uff0c\u7b97\u6cd5\u8f6f\u4ef6\u5316\u201d\uff0c\u63a8\u8fdb\u51b3\u7b56\u79d1\u5b66\u5316\u3001\u670d\u52a1\u9ad8\u6548\u5316\u3002",
     "website": "http://www.idataway.com",
     "tags": [
       "Indepth Interview",
@@ -2814,7 +2814,7 @@ const REAL_AGENCIES = [
     "id": "direct-research-korea",
     "name": "DIRECT RESEARCH KOREA",
     "tagline": "Direct Research Korea (DRK) is an independent market research and consumer insight firm based in South Korea. Through ou...",
-    "longDescription": "Direct Research Korea (DRK) is an independent market research and consumer insight firm based in South Korea. Through our contributions to ESOMAR’s ANA Resource Library, we share practical research documents, case examples, and methodological guidance drawn from real projects with global and regional clients. Our expertise lies in qualitative-led research, gaming and digital culture, and the application of AI-enabled tools to improve research efficiency and insight quality. DRK works closely with international research partners and brands seeking a deep, nuanced understanding of Korean consumer behavior beyond surface-level metrics.",
+    "longDescription": "Direct Research Korea (DRK) is an independent market research and consumer insight firm based in South Korea. Through our contributions to ESOMAR\u2019s ANA Resource Library, we share practical research documents, case examples, and methodological guidance drawn from real projects with global and regional clients. Our expertise lies in qualitative-led research, gaming and digital culture, and the application of AI-enabled tools to improve research efficiency and insight quality. DRK works closely with international research partners and brands seeking a deep, nuanced understanding of Korean consumer behavior beyond surface-level metrics.",
     "website": "",
     "tags": [
       "Consumers",
@@ -2845,7 +2845,7 @@ const REAL_AGENCIES = [
   {
     "id": "divergent-insights-indonesia",
     "name": "DIVERGENT INSIGHTS - INDONESIA",
-    "tagline": "We, ‘Dive-In’ to provide deeper insights to meet your business objectives, to pave future strategies for a fruitful outc...",
+    "tagline": "We, \u2018Dive-In\u2019 to provide deeper insights to meet your business objectives, to pave future strategies for a fruitful outc...",
     "longDescription": "Unlock actionable insights with our innovative solutions. Partner with a Global Market Research for data-driven strategies and cutting-edge expertise.",
     "website": "http://www.divergentinsights.com",
     "tags": [
@@ -3842,7 +3842,7 @@ const REAL_AGENCIES = [
     "id": "hycon-research-co-ltd",
     "name": "HYCON RESEARCH CO. LTD.",
     "tagline": "Hycon Research is a China based boutique research house which provides tailored research services and solutions on both ...",
-    "longDescription": "北美合作伙伴Lieberman World Research\nKantar Health LaunchboxMarket ProbeGreenberg Research Fieldwork NetworkRadiusWatchlabAttuneMozaic Group Ipsos NARoninMarket Probe InternationalCognitoKeltonRibnik ResearchThe Link GroupGray InsightHansa GCRBaccus Research Point ForwardResearch TechnologiesAnd more 欧洲合作伙伴MMRPsyma People ResearchEurosynIpsos FranceIpsos SwitzerlandWisely insightsRosenthal ResearchInsightquestPorterhouse MedicalCello Health InsightBunnyfootFiorente GlobalBEYOPerspective MRDouble Helix",
+    "longDescription": "\u5317\u7f8e\u5408\u4f5c\u4f19\u4f34Lieberman World Research\nKantar Health\u00a0LaunchboxMarket ProbeGreenberg Research\u00a0Fieldwork NetworkRadiusWatchlabAttuneMozaic Group\u00a0Ipsos NARoninMarket Probe InternationalCognitoKeltonRibnik ResearchThe Link GroupGray InsightHansa GCRBaccus Research\u00a0Point ForwardResearch TechnologiesAnd more \u6b27\u6d32\u5408\u4f5c\u4f19\u4f34MMRPsyma\u00a0People ResearchEurosynIpsos FranceIpsos SwitzerlandWisely insightsRosenthal ResearchInsightquestPorterhouse MedicalCello Health InsightBunnyfootFiorente GlobalBEYOPerspective MRDouble Helix",
     "website": "http://www.hyconresearch.com",
     "tags": [
       "Consumers",
@@ -4109,7 +4109,7 @@ const REAL_AGENCIES = [
     "id": "innov8asia-thailand-ltd",
     "name": "INNOV8ASIA (THAILAND) LTD",
     "tagline": "innov8asia (Thailand) Ltd is an established, full service research & insights agency that has deep expertise in consumer...",
-    "longDescription": "is an agency set up specifically to offer clients what they need – commercially focused marketing research that delivers clear, actionable insights, which makes an impact on their  business. Our years of experience in research, access to best in class advanced analytics ensure that we investigate your business issues using the right approaches, at the right time and to maximum effect",
+    "longDescription": "is an agency set up specifically to offer clients what they need \u2013 commercially focused marketing research that delivers clear, actionable insights,\u00a0which makes an impact on their \u00a0business. Our years of experience in research, access to best in class advanced analytics ensure that we investigate your business issues using the right approaches, at the right time and to maximum effect",
     "website": "http://www.innov8asia.com",
     "tags": [
       "Consumers",
@@ -4202,7 +4202,7 @@ const REAL_AGENCIES = [
     "id": "intage-thailand-co-ltd",
     "name": "INTAGE (THAILAND) CO. LTD.",
     "tagline": "INTAGE Thailand is a subsidiary of INTAGE Inc., the largest marketing research agency in Japan, and No. 9 globally. We a...",
-    "longDescription": "บริษัทวิจัยและที่ปรึกษาทางการตลาด อันดับ 1 จากประเทศญี่ปุ่น Become our respondents Luxury once meant what you owned.Today, it means how well you live.\r\nIn a fast-paced, hi...",
+    "longDescription": "\u0e1a\u0e23\u0e34\u0e29\u0e31\u0e17\u0e27\u0e34\u0e08\u0e31\u0e22\u0e41\u0e25\u0e30\u0e17\u0e35\u0e48\u0e1b\u0e23\u0e36\u0e01\u0e29\u0e32\u0e17\u0e32\u0e07\u0e01\u0e32\u0e23\u0e15\u0e25\u0e32\u0e14 \u0e2d\u0e31\u0e19\u0e14\u0e31\u0e1a 1 \u0e08\u0e32\u0e01\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e0d\u0e35\u0e48\u0e1b\u0e38\u0e48\u0e19 Become our respondents Luxury once meant\u00a0what you owned.Today, it means\u00a0how well you live.\r\nIn a fast-paced, hi...",
     "website": "http://www.intage-thailand.com",
     "tags": [
       "Focus Groups",
@@ -4232,7 +4232,7 @@ const REAL_AGENCIES = [
   {
     "id": "intage-inc",
     "name": "INTAGE INC",
-    "tagline": "INTAGE is Japan’s leading marketing research company with 60+ years’ experience. We operate across Asia, delivering deep...",
+    "tagline": "INTAGE is Japan\u2019s leading marketing research company with 60+ years\u2019 experience. We operate across Asia, delivering deep...",
     "longDescription": "INTAGE Inc. is a long-time specialist in marketing, consumer panels, and retail tracking research. Together with the INTAGE Group entities, the company harnesses its research, data collection and analysis, and system solution technologies to partner with clients across a broad range of industries, deliver strategic insights, and provide the actionable intelligence needed for their management and marketing decision-making processes in Japan, throughout Asia, and around the world.",
     "website": "http://www.intage.co.jp/english/",
     "tags": [
@@ -4417,7 +4417,7 @@ const REAL_AGENCIES = [
     "id": "info-survey-group",
     "name": "Info-Survey Group",
     "tagline": "Market research and field services provider.",
-    "longDescription": "ISG specializes in collecting your target customers’ data and converting them into customer intelligence, to help you optimize your marketing strategies. Carefully trained and tested in Marketing and Research Methods",
+    "longDescription": "ISG specializes in collecting your target customers\u2019 data and converting them into customer intelligence, to help you optimize your marketing strategies. Carefully trained and tested in Marketing and Research Methods",
     "website": "http://www.infosurvey.com.my/",
     "tags": [
       "AI",
@@ -4549,7 +4549,7 @@ const REAL_AGENCIES = [
     "id": "isar",
     "name": "Isar",
     "tagline": "Market research and field services provider.",
-    "longDescription": "伊飒尔，用户体验设计_界面设计用户研究用户画像用户体验培训与认证用户体验实验室建设  uxtesting 可用性测试  uxtester 用户研究软件  专家评估 定义产品的目标用户群、明确、细化产品概念使用户的实际需求成为产品设计的导向，使产品更符合用户的习惯、经验和期待。 User Interface Design",
+    "longDescription": "\u4f0a\u98d2\u5c14\uff0c\u7528\u6237\u4f53\u9a8c\u8bbe\u8ba1_\u754c\u9762\u8bbe\u8ba1\u7528\u6237\u7814\u7a76\u7528\u6237\u753b\u50cf\u7528\u6237\u4f53\u9a8c\u57f9\u8bad\u4e0e\u8ba4\u8bc1\u7528\u6237\u4f53\u9a8c\u5b9e\u9a8c\u5ba4\u5efa\u8bbe  uxtesting \u53ef\u7528\u6027\u6d4b\u8bd5  uxtester \u7528\u6237\u7814\u7a76\u8f6f\u4ef6  \u4e13\u5bb6\u8bc4\u4f30 \u5b9a\u4e49\u4ea7\u54c1\u7684\u76ee\u6807\u7528\u6237\u7fa4\u3001\u660e\u786e\u3001\u7ec6\u5316\u4ea7\u54c1\u6982\u5ff5\u4f7f\u7528\u6237\u7684\u5b9e\u9645\u9700\u6c42\u6210\u4e3a\u4ea7\u54c1\u8bbe\u8ba1\u7684\u5bfc\u5411\uff0c\u4f7f\u4ea7\u54c1\u66f4\u7b26\u5408\u7528\u6237\u7684\u4e60\u60ef\u3001\u7ecf\u9a8c\u548c\u671f\u5f85\u3002 User Interface Design",
     "website": "http://www.isaruid.com",
     "tags": [
       "Consumers",
@@ -4610,8 +4610,8 @@ const REAL_AGENCIES = [
   {
     "id": "joshua-research-consultants-pte-ltd",
     "name": "JOSHUA RESEARCH CONSULTANTS PTE. LTD.",
-    "tagline": "Joshua Research Consultants is an award-winning and fast-growing company that provides market research services and data collection in the world's fastest growing region â Asia Pacific. With offi...",
-    "longDescription": "Joshua Research Consultants Joshua Research Consultants is an award-winning and fast-growing company that provides market research services and data collection in the world's fastest growing region – Asia Pacific. With offices in Singapore, Malaysia, China-Shanghai, Beijing and Guangzhou, we provide expertise to help companies gathering insightful information to drive better, faster and more effective business decisions.",
+    "tagline": "Joshua Research Consultants is an award-winning and fast-growing company that provides market research services and data collection in the world's fastest growing region \u00e2\u0080\u0093 Asia Pacific. With offi...",
+    "longDescription": "Joshua Research Consultants Joshua Research Consultants is an award-winning and fast-growing company that provides market research services and data collection in the world's fastest growing region \u2013 Asia Pacific. With offices in Singapore, Malaysia, China-Shanghai, Beijing and Guangzhou, we provide expertise to help companies gathering insightful information to drive better, faster and more effective business decisions.",
     "website": "https://www.joshuaresearch.com",
     "tags": [
       "AI",
@@ -4643,7 +4643,7 @@ const REAL_AGENCIES = [
     "id": "joshua-research-consultants-sdn-bhd",
     "name": "JOSHUA RESEARCH CONSULTANTS SDN BHD",
     "tagline": "Independent market research agency providing specialized fieldwork and insight solutions in the region.",
-    "longDescription": "Joshua Research Consultants Joshua Research Consultants is an award-winning and fast-growing company that provides market research services and data collection in the world's fastest growing region – Asia Pacific. With offices in Singapore, Malaysia, China-Shanghai, Beijing and Guangzhou, we provide expertise to help companies gathering insightful information to drive better, faster and more effective business decisions.",
+    "longDescription": "Joshua Research Consultants Joshua Research Consultants is an award-winning and fast-growing company that provides market research services and data collection in the world's fastest growing region \u2013 Asia Pacific. With offices in Singapore, Malaysia, China-Shanghai, Beijing and Guangzhou, we provide expertise to help companies gathering insightful information to drive better, faster and more effective business decisions.",
     "website": "http://www.joshuaresearch.com",
     "tags": [
       "AI",
@@ -5041,8 +5041,8 @@ const REAL_AGENCIES = [
   {
     "id": "marketing-research-services-inc",
     "name": "MARKETING RESEARCH SERVICES INC.",
-    "tagline": "Alongside you We work alongside our clients supporting them to identify solutions through researches beyond ex […]",
-    "longDescription": "We work alongside our clients supporting them to identify solutions through researches beyond expectations. Meaningful research starts with setting up the right marketing issues and research outlines. We value carefully listening to and organizing their stories because it helps us uncover and setup issues that were not recognized as well as sharpen the already-identified issues. Marketing research is “a study for our clients to identify marketing issues,” which is not a simple task. As your trus",
+    "tagline": "Alongside you We work alongside our clients supporting them to identify solutions through researches beyond ex [\u2026]",
+    "longDescription": "We work alongside our clients supporting them to identify solutions through researches beyond expectations. Meaningful research starts with setting up the right marketing issues and research outlines. We value carefully listening to and organizing their stories because it helps us uncover and setup issues that were not recognized as well as sharpen the already-identified issues. Marketing research is \u201ca study for our clients to identify marketing issues,\u201d which is not a simple task. As your trus",
     "website": "http://www.mrs.co.jp/indexen.asp",
     "tags": [
       "Focus Groups",
@@ -5364,7 +5364,7 @@ const REAL_AGENCIES = [
     "id": "mrp-eurasia",
     "name": "MRP-EURASIA",
     "tagline": "Market research and field services provider.",
-    "longDescription": "Market Research & Polls – EURASIA” (MRP-EURASIA) is research international holding, providing a full spectrum of market research and opinion polls on the vast territory of Eurasian continent.",
+    "longDescription": "Market Research & Polls \u2013 EURASIA\u201d (MRP-EURASIA) is research international holding, providing a full spectrum of market research and opinion polls on the vast territory of Eurasian continent.",
     "website": "https://www.mrp-eurasia.com/",
     "tags": [
       "Consumers",
@@ -5496,7 +5496,7 @@ const REAL_AGENCIES = [
     "id": "market-metrics",
     "name": "Market Metrics",
     "tagline": "Market research and field services provider.",
-    "longDescription": "Connecting real people to real insights Register for our panel 228K+ CATI / WATI surveysconducted since 2001 55,435 F2F surveysconducted since 2001 15,310 Qual recruitment surveysconducted since 2001 1,365 Mystery shopping surveysconducted since 2001 Pioneering market research At Market Metrics, we are more than just a research company; we are pioneering market research through exceptional […]",
+    "longDescription": "Connecting real people to real insights Register for our panel 228K+ CATI / WATI surveysconducted since 2001 55,435 F2F surveysconducted since 2001 15,310 Qual recruitment surveysconducted since 2001 1,365 Mystery shopping surveysconducted since 2001 Pioneering market research At Market Metrics, we are more than just a research company; we are pioneering market research through exceptional [\u2026]",
     "website": "https://www.marketmetrics.com.au/",
     "tags": [
       "Recruitment",
@@ -5728,7 +5728,7 @@ const REAL_AGENCIES = [
     "id": "nexus-link-pte-ltd",
     "name": "NEXUS LINK PTE LTD",
     "tagline": "Proficient in both qualitative and quantitative research methodologies, our team of research specialists and consultants...",
-    "longDescription": "A one-stop market research that delivers across all segments Nexus Link’s extensive past research has identified six key drivers of customer satisfa",
+    "longDescription": "A one-stop market research that delivers across all segments Nexus Link\u2019s extensive past research has identified six key drivers of customer satisfa",
     "website": "http://www.nexus-link.net",
     "tags": [
       "Social & Public",
@@ -6090,7 +6090,7 @@ const REAL_AGENCIES = [
     "id": "pixel-research",
     "name": "PIXEL RESEARCH",
     "tagline": "PT Global Insight Indonesia (Pixel Research) is a marketing research company based in Indonesia.\nwe want to help clients...",
-    "longDescription": "It is important for us to be acknowledged by the market as the good choice for marketing research  partner Indonesia. We joined ESOMAR and PERPI.\r\nWe got international recognition by being accepted as a member of ESOMAR on 2025.  Pixel Research is a member of ESOMAR that enabling better research into markets, consumers,  and societies worldwide. Please see our profile in ESOMAR on www.esomar.org. As a member, we  are committed to the highest professional and ethical standards embodied in the ICC/ESOMAR  Code on Market and Social Practice.In local perspective, we are active as a member of PERPI (Perhimpunan Riset Pemasaran Indonesia) and ESOMAR, a marketing research society of Indonesia.",
+    "longDescription": "It is important for us to be acknowledged by the market as the good choice for marketing research \u00a0partner Indonesia. We joined ESOMAR\u00a0and PERPI.\r\nWe got international recognition by being accepted as a member of ESOMAR on 2025. \u00a0Pixel Research is a member of ESOMAR that enabling better research into markets, consumers, \u00a0and societies worldwide. Please see our profile in ESOMAR on www.esomar.org. As a member, we \u00a0are committed to the highest professional and ethical standards embodied in the ICC/ESOMAR \u00a0Code on Market and Social Practice.In local perspective, we are active as a member of PERPI\u00a0(Perhimpunan Riset Pemasaran Indonesia) and ESOMAR, a marketing research society of Indonesia.",
     "website": "https://pixel-research.com/",
     "tags": [
       "Consumers",
@@ -6121,8 +6121,8 @@ const REAL_AGENCIES = [
   {
     "id": "psrc",
     "name": "PSRC",
-    "tagline": "In 1974, we were babies in a newborn industry. Twelve people with one client. We’ve grown a lot in 35 years and we’re re...",
-    "longDescription": "In 1974, we were babies in a newborn industry. Twelve people with one client. We’ve grown a lot in 35 years and we’re recognized as one of the leading custom research companies in the Philippines, with a hundred specialists on board and a wide-reaching roster of local and global blue-chip clients.\n\nWhat you’ll get from us is a “method-neutral” approach to research. We design studies suited specifically to your business issues. We’re not boxed in by a limited set of tools to work with and we don’t feel compelled to sell you tools you don’t need. You will find that our recommendations will be grounded on real and actionable insights. With our people’s collective experience of more than 200 years, we do know Filipino consumers best.\n\nPSRC has its own in-house field and data-processing services. We also have the biggest qualitative research team in the industry, with three fully-equipped FGD rooms. Need more information about us? Visit us at www.psrc.com.ph",
+    "tagline": "In 1974, we were babies in a newborn industry. Twelve people with one client. We\u2019ve grown a lot in 35 years and we\u2019re re...",
+    "longDescription": "In 1974, we were babies in a newborn industry. Twelve people with one client. We\u2019ve grown a lot in 35 years and we\u2019re recognized as one of the leading custom research companies in the Philippines, with a hundred specialists on board and a wide-reaching roster of local and global blue-chip clients.\n\nWhat you\u2019ll get from us is a \u201cmethod-neutral\u201d approach to research. We design studies suited specifically to your business issues. We\u2019re not boxed in by a limited set of tools to work with and we don\u2019t feel compelled to sell you tools you don\u2019t need. You will find that our recommendations will be grounded on real and actionable insights. With our people\u2019s collective experience of more than 200 years, we do know Filipino consumers best.\n\nPSRC has its own in-house field and data-processing services. We also have the biggest qualitative research team in the industry, with three fully-equipped FGD rooms. Need more information about us? Visit us at www.psrc.com.ph",
     "website": "http://www.psrc.com.ph",
     "tags": [
       "Consumers",
@@ -6643,7 +6643,7 @@ const REAL_AGENCIES = [
     "id": "shin-joho-center-inc",
     "name": "SHIN JOHO CENTER INC",
     "tagline": "Shin Joho Center is one of the most distinguished polling organizations in Japan, which has great experiences especially...",
-    "longDescription": "新情報センタ－は、現代社会の政治・行政・経済・文化活動における、人々の意識・行動をより速く、より客観的にとらえ、的確な調査情報を提供いたします。 調査委託元の承認を得たものを掲載しております。 ◆家計消費状況調査を実施しています。　【調査の紹介動画を公開中です】",
+    "longDescription": "\u65b0\u60c5\u5831\u30bb\u30f3\u30bf\uff0d\u306f\u3001\u73fe\u4ee3\u793e\u4f1a\u306e\u653f\u6cbb\u30fb\u884c\u653f\u30fb\u7d4c\u6e08\u30fb\u6587\u5316\u6d3b\u52d5\u306b\u304a\u3051\u308b\u3001\u4eba\u3005\u306e\u610f\u8b58\u30fb\u884c\u52d5\u3092\u3088\u308a\u901f\u304f\u3001\u3088\u308a\u5ba2\u89b3\u7684\u306b\u3068\u3089\u3048\u3001\u7684\u78ba\u306a\u8abf\u67fb\u60c5\u5831\u3092\u63d0\u4f9b\u3044\u305f\u3057\u307e\u3059\u3002 \u8abf\u67fb\u59d4\u8a17\u5143\u306e\u627f\u8a8d\u3092\u5f97\u305f\u3082\u306e\u3092\u63b2\u8f09\u3057\u3066\u304a\u308a\u307e\u3059\u3002 \u25c6\u5bb6\u8a08\u6d88\u8cbb\u72b6\u6cc1\u8abf\u67fb\u3092\u5b9f\u65bd\u3057\u3066\u3044\u307e\u3059\u3002\u3000\u3010\u8abf\u67fb\u306e\u7d39\u4ecb\u52d5\u753b\u3092\u516c\u958b\u4e2d\u3067\u3059\u3011",
     "website": "https://www.sjc.or.jp",
     "tags": [
       "Social & Public",
@@ -6784,7 +6784,7 @@ const REAL_AGENCIES = [
     "id": "sevenseas-marketing-research",
     "name": "SevenSeas Marketing Research",
     "tagline": "Market research and field services provider.",
-    "longDescription": "セブンシーズ マーケティングリサーチ株式会社（SSMR）の ホーム のページです。セブンシーズ マーケティングリサーチ株式会社（SSMR）は、ビジネスの意思決定をサポートする課題解決型のマーケティングリサーチ会社です。多彩なマーケティングリサーチによってクライアントの『生活者理解』と課題解決を強力にサポートいたします。",
+    "longDescription": "\u30bb\u30d6\u30f3\u30b7\u30fc\u30ba \u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ea\u30b5\u30fc\u30c1\u682a\u5f0f\u4f1a\u793e\uff08SSMR\uff09\u306e \u30db\u30fc\u30e0 \u306e\u30da\u30fc\u30b8\u3067\u3059\u3002\u30bb\u30d6\u30f3\u30b7\u30fc\u30ba \u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ea\u30b5\u30fc\u30c1\u682a\u5f0f\u4f1a\u793e\uff08SSMR\uff09\u306f\u3001\u30d3\u30b8\u30cd\u30b9\u306e\u610f\u601d\u6c7a\u5b9a\u3092\u30b5\u30dd\u30fc\u30c8\u3059\u308b\u8ab2\u984c\u89e3\u6c7a\u578b\u306e\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ea\u30b5\u30fc\u30c1\u4f1a\u793e\u3067\u3059\u3002\u591a\u5f69\u306a\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ea\u30b5\u30fc\u30c1\u306b\u3088\u3063\u3066\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u306e\u300e\u751f\u6d3b\u8005\u7406\u89e3\u300f\u3068\u8ab2\u984c\u89e3\u6c7a\u3092\u5f37\u529b\u306b\u30b5\u30dd\u30fc\u30c8\u3044\u305f\u3057\u307e\u3059\u3002",
     "website": "http://www.ss-mr.com",
     "tags": [
       "Consumers",
@@ -7041,7 +7041,7 @@ const REAL_AGENCIES = [
     "id": "top-level-mena",
     "name": "TOP Level MENA",
     "tagline": "Market research and field services provider.",
-    "longDescription": "MARKETING RESEARCH AGENCY\r\nA unique blend of Qualitative and Quantitative energies and innovations make us a formidable full marketing Research agency in MENA…",
+    "longDescription": "MARKETING RESEARCH AGENCY\r\nA unique blend of Qualitative and Quantitative energies and innovations make us a formidable full marketing Research agency in MENA\u2026",
     "website": "http://www.toplevel-mena.com/",
     "tags": [
       "Quantitative",
@@ -7077,7 +7077,7 @@ const REAL_AGENCIES = [
     "id": "top-level-mena-1",
     "name": "TOP Level MENA",
     "tagline": "Market research and field services provider.",
-    "longDescription": "MARKETING RESEARCH AGENCY\r\nA unique blend of Qualitative and Quantitative energies and innovations make us a formidable full marketing Research agency in MENA…",
+    "longDescription": "MARKETING RESEARCH AGENCY\r\nA unique blend of Qualitative and Quantitative energies and innovations make us a formidable full marketing Research agency in MENA\u2026",
     "website": "http://www.toplevel-mena.com/",
     "tags": [
       "Quantitative",
@@ -7113,7 +7113,7 @@ const REAL_AGENCIES = [
     "id": "top-level-mena-2",
     "name": "TOP Level MENA",
     "tagline": "Market research and field services provider.",
-    "longDescription": "MARKETING RESEARCH AGENCY\r\nA unique blend of Qualitative and Quantitative energies and innovations make us a formidable full marketing Research agency in MENA…",
+    "longDescription": "MARKETING RESEARCH AGENCY\r\nA unique blend of Qualitative and Quantitative energies and innovations make us a formidable full marketing Research agency in MENA\u2026",
     "website": "http://www.toplevel-mena.com",
     "tags": [
       "Quantitative",
@@ -7601,6 +7601,68 @@ const REAL_AGENCIES = [
     "services": [
       "Consumers",
       "AI"
+    ],
+    "solutions": [
+      "Market Sizing",
+      "Customer Experience"
+    ],
+    "facility": []
+  },
+  {
+    "id": "pmi-rnc",
+    "name": "PMI",
+    "tagline": "Specialized market research and fieldwork services provider.",
+    "longDescription": "We provide specialized market research and fieldwork services in Korea.",
+    "website": "https://pmirnc.com/",
+    "tags": [
+      "Focus Groups",
+      "Online Surveys",
+      "Market Sizing",
+      "Customer Experience"
+    ],
+    "region": "Korea",
+    "founded": "N/A",
+    "minProjectSize": "N/A",
+    "employees": "N/A",
+    "detailUrl": "",
+    "emails": [
+      "rfq.oversea@pmirnc.com"
+    ],
+    "keyPeople": [],
+    "services": [
+      "Focus Groups",
+      "Online Surveys"
+    ],
+    "solutions": [
+      "Market Sizing",
+      "Customer Experience"
+    ],
+    "facility": []
+  },
+  {
+    "id": "mango-rnc",
+    "name": "Mango R&C",
+    "tagline": "Specialized market research and fieldwork services provider.",
+    "longDescription": "We provide specialized market research and fieldwork services in Korea.",
+    "website": "http://mangornc.co.kr",
+    "tags": [
+      "Focus Groups",
+      "Online Surveys",
+      "Market Sizing",
+      "Customer Experience"
+    ],
+    "region": "Korea",
+    "founded": "N/A",
+    "minProjectSize": "N/A",
+    "employees": "N/A",
+    "detailUrl": "",
+    "emails": [
+      "david@mangornc.co.kr"
+    ],
+    "keyPeople": [],
+    "services": [
+      "Focus Groups",
+      "Online Surveys"
     ],
     "solutions": [
       "Market Sizing",
