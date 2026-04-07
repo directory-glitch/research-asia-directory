@@ -159,7 +159,7 @@ function initApplication() {
       
       // 2. 검색어 데이터 수집 (글자 2자 이상 입력 후 엔터/클릭 시)
       if (term.length > 1) {
-          sendTrackingData("search_query", { keyword: term });
+          sendTrackingData("search", { keyword: term });
       }
 
       // 3. 선택된 국가 및 태그 필터 확인
