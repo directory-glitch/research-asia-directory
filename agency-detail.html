@@ -1,0 +1,429 @@
+<!-- gabia_deploy/agency-detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency Detail | Research Asia</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- agencies.js 먼저 로드하여 REAL_AGENCIES 전역 변수를 확보 -->
+  <script src="agencies.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP607BL8P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP607BL8P9');
+  </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body style="background:#F8FAFC;">
+  
+  <div class="detail-header">
+    <div class="container">
+      <a href="index.html" class="back-link">&larr; Back to Directory</a>
+      <h1 class="detail-title" id="d-name">Loading...</h1>
+      <p style="font-size:1.2rem; color:var(--text-muted);" id="d-tagline"></p>
+      
+      <div style="display:flex; align-items:center; gap:1.5rem; margin-top:2rem; flex-wrap:wrap;">
+        <div class="rating" style="font-size:1.2rem; display:flex; align-items:center; gap:8px; font-weight:600;" id="d-region"></div>
+        <div style="font-weight:600; color:var(--secondary-color);" id="d-tags"></div>
+        <a href="#" id="d-website" target="_blank" style="padding:8px 16px; background:var(--primary-color); color:white; border-radius:4px; text-decoration:none; display:none; font-size:0.9rem; font-weight:600;">Visit Website &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container detail-grid">
+    
+    <!-- Left Column -->
+    <div style="display:flex; flex-direction:column; gap:2rem;">
+      
+      <!-- About Card -->
+      <div class="card">
+        <h4><span style="font-size:1.5rem;">📖</span> About the Agency</h4>
+        <div id="d-desc" style="line-height:1.8; color:var(--text-muted); font-size:1.05rem; white-space:pre-wrap;">
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div>
+            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">📊</span> Services</h4>
+            <div id="d-services"></div>
+          </div>
+          <div>
+            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">💡</span> Solutions</h4>
+            <div id="d-solutions"></div>
+          </div>
+          <div>
+            <h4 style="margin-bottom:1rem;"><span style="font-size:1.5rem;">🏢</span> Facility</h4>
+            <div id="d-facility"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h4><span style="font-size:1.5rem;">🤝</span> Insights & Case Study</h4>
+        <div id="d-casestudies" style="display:flex; flex-direction:column; gap:0.6rem; margin-top:1rem;"></div>
+      </div>
+
+      <div class="card">
+        <h4><span style="font-size:1.5rem;">🏢</span> Company Overview</h4>
+        <ul style="list-style:none; line-height:2.5; color:var(--text-muted);">
+          <li style="display:flex; justify-content:space-between; border-bottom:1px solid #E2E8F0; padding-bottom:8px; margin-bottom:8px;">
+            <span>Employees</span>
+            <strong style="color:var(--text-main);" id="d-emp"></strong>
+          </li>
+          <li style="display:flex; justify-content:space-between;">
+            <span>Founded</span>
+            <strong style="color:var(--text-main);" id="d-found"></strong>
+          </li>
+          <li style="display:flex; flex-direction:column; margin-top:20px; padding-top:20px; border-top:1px solid #E2E8F0;" id="d-keypeople-wrapper">
+            <span style="margin-bottom:8px; display:block;">Key People & Contact</span>
+            <div id="d-keypeople" style="color:var(--text-main); font-weight:600; line-height:1.6;"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div>
+      <div class="card cta-box">
+        <h4 style="color:white; font-size:1.3rem; line-height:1.4; margin-bottom:1rem;" id="cta-title">Get a Project Estimate</h4>
+        <p style="color:#CBD5E1; font-size:0.9rem;">Receive a detailed quote based on this agency's unit cost index.</p>
+        <button class="estimate-btn" id="open-rfq-btn">Request Estimate</button>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+  <!-- Full Screen RFQ Modal Overlay -->
+  <div class="modal-overlay" id="rfq-overlay">
+    <div class="modal-content" style="max-width: 500px;">
+      <button class="modal-close" id="close-rfq-btn">&times;</button>
+      
+      <!-- RFQ Step 1: Input Form -->
+      <div id="rfq-step-1" class="funnel-step active">
+        <h2 style="color:var(--primary-color); margin-bottom:0.5rem;">Request a Quote</h2>
+        <p style="color:var(--text-muted); margin-bottom:1rem; font-size:0.95rem;">Send a direct inquiry to <span id="rfq-agency-name" style="font-weight:700; color:var(--text-main);">this agency</span>.</p>
+        
+        <div id="rfq-agency-emails" style="background:#F1F5F9; padding:12px; border-radius:6px; margin-bottom:1rem; font-size:0.9rem; color:var(--text-main); display:none; border-left: 4px solid var(--secondary-color);">
+           <strong style="display:block; margin-bottom:4px;">Agency Direct Contact:</strong> 
+           <span id="rfq-email-list"></span>
+        </div>
+        
+        <div class="input-group">
+          <label>Your Name</label>
+          <input type="text" id="rfq-name" placeholder="E.g., John Doe" required>
+        </div>
+
+        <div class="input-group">
+          <label>Work Email</label>
+          <input type="email" id="rfq-email" placeholder="john@company.com" required>
+        </div>
+
+        <div class="input-group">
+          <label>Research Type</label>
+          <select id="rfq-type">
+            <option value="Qualitative">Qualitative (FGDs, IDIs)</option>
+            <option value="Quantitative">Quantitative (Online, CLT)</option>
+            <option value="Mixed">Mixed Method</option>
+            <option value="Recruitment">Panel & Recruitment Only</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Estimated Budget (USD)</label>
+          <select id="rfq-budget">
+            <option value="Under $5k">Under $5,000</option>
+            <option value="$5k-$15k">$5,000 - $15,000</option>
+            <option value="$15k-$50k">$15,000 - $50,000</option>
+            <option value="Over $50k">Over $50,000</option>
+            <option value="Not Sure Yet">Not Sure Yet</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Project Details (Optional)</label>
+          <textarea id="rfq-desc" rows="3" placeholder="Briefly describe your objectives, target audience, and timeline..."></textarea>
+        </div>
+
+        <button class="estimate-btn" id="send-rfq-btn" style="width:100%; margin-top:1rem;">Send Request</button>
+      </div>
+
+      <!-- RFQ Step 2: Success Message -->
+      <div id="rfq-step-2" class="funnel-step" style="text-align:center; padding: 3rem 1rem;">
+        <div style="font-size: 3.5rem; margin-bottom: 1rem;">✅</div>
+        <h2 style="color:var(--text-main); margin-bottom: 0.5rem;">Request Sent!</h2>
+        <p style="color:var(--text-muted);">The agency will review your details and get back to you within 24-48 hours with an estimate.</p>
+        <button class="estimate-btn" id="done-rfq-btn" style="margin-top: 2rem; background: var(--secondary-color);">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Inline Script - agencies.js가 동기적으로 먼저 로드되어 REAL_AGENCIES가 확보됨 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get('id');
+      
+      // agencies.js에서 REAL_AGENCIES 직접 사용 (app.js의 비동기 로딩에 의존하지 않음)
+      const allAgencies = (typeof REAL_AGENCIES !== "undefined") ? REAL_AGENCIES : [];
+      const agency = allAgencies.find(a => a.id === id);
+      
+      if(!agency) {
+        document.getElementById('d-name').innerText = "Agency Not Found";
+        document.getElementById('d-tagline').innerText = "The requested agency profile could not be loaded. Please go back and try again.";
+        return;
+      }
+
+
+
+      // ===== Populate Page Title =====
+      document.title = `${agency.name} | Research Asia`;
+      document.getElementById('d-name').innerText = agency.name;
+      document.getElementById('d-tagline').innerText = agency.tagline;
+      document.getElementById('d-region').innerHTML = `<span>${agency.region || "Asia-Pacific"}</span>`;
+      
+      // CTA Box 다이내믹 타이틀 업데이트
+      document.getElementById('cta-title').innerHTML = `Get a project estimate<br><span style="font-size:1.05rem; font-weight:400; color:#94A3B8;">from ${agency.name}</span>`;
+
+      // ===== Deep Data Binding =====
+      document.getElementById('d-desc').innerText = agency.longDescription || agency.tagline || "No description available.";
+      document.getElementById('d-emp').innerText = agency.employees || "10 - 49";
+      document.getElementById('d-found').innerText = agency.founded || "N/A";
+      
+      // Website Button
+      const websiteBtn = document.getElementById('d-website');
+      if (agency.website) {
+          websiteBtn.href = agency.website;
+          websiteBtn.innerHTML = 'Visit Website &rarr;';
+          websiteBtn.style.display = "inline-block";
+      } else {
+          // 구글 검색으로 대체
+          websiteBtn.href = `https://www.google.com/search?q=${encodeURIComponent(agency.name + " research")}`;
+          websiteBtn.innerHTML = 'Search on Google 🔍';
+          websiteBtn.style.background = '#64748B'; // 회색톤으로 대체
+          websiteBtn.style.display = "inline-block";
+      }
+      
+      // 웹사이트 방문 클릭 트래킹
+      websiteBtn.addEventListener('click', () => {
+          if (window.sendTrackingData) {
+              window.sendTrackingData("action", {
+                  action_type: "click_visit_website",
+                  agency_id: agency.id,
+                  agency_name: agency.name,
+                  description: `${agency.name} 웹사이트 이동 버튼 클릭`
+              });
+          }
+      });
+
+
+
+      // ===== Tags =====
+      document.getElementById('d-tags').innerHTML = agency.tags.map(t => `<span class="tag" style="margin-right:8px;">${t}</span>`).join('');
+      
+      // ===== Service Lines (DB 컬럼 기반) =====
+      const renderList = (arr) => arr && arr.length > 0
+        ? arr.map(s => `<div style="padding: 0.6rem 1rem; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 0.6rem; font-weight: 600; font-size: 0.85rem; color: var(--primary-color); display: flex; align-items: center; letter-spacing: 0.02em;"><span style="color: #10B981; margin-right: 8px; font-size: 1rem;">✓</span> ${s.toUpperCase()}</div>`).join('')
+        : `<div style="color:var(--text-muted); font-size:0.9rem; padding: 0.5rem 0;">No data</div>`;
+
+      document.getElementById('d-services').innerHTML = renderList(agency.services);
+      document.getElementById('d-solutions').innerHTML = renderList(agency.solutions);
+      document.getElementById('d-facility').innerHTML = renderList(agency.facility);
+
+      // ===== Key People & Emails =====
+      if ((agency.keyPeople && agency.keyPeople.length > 0) || (agency.emails && agency.emails.length > 0)) {
+         let kpHTML = (agency.keyPeople || []).map(p => `<div><span style="font-size:1.1em; margin-right:6px;">👤</span> ${p.name} </div>`).join('');
+         let emailHTML = (agency.emails || []).map(e => `<div><span style="font-size:1.1em; margin-right:6px;">✉️</span> <a href="mailto:${e}" style="color:var(--secondary-color); text-decoration:none;">${e}</a></div>`).join('');
+         document.getElementById('d-keypeople').innerHTML = kpHTML + emailHTML;
+         document.getElementById('d-keypeople-wrapper').style.display = "flex";
+      } else {
+         document.getElementById('d-keypeople-wrapper').style.display = "none";
+      }
+
+      // ===== Agency Emails in RFQ =====
+      if (agency.emails && agency.emails.length > 0) {
+         document.getElementById('rfq-email-list').innerHTML = agency.emails.map(e => `<a href="mailto:${e}" style="color:var(--secondary-color); text-decoration:none; margin-right:8px; font-weight:600;">${e}</a>`).join('<br>');
+         document.getElementById('rfq-agency-emails').style.display = "block";
+      } else {
+         document.getElementById('rfq-agency-emails').style.display = "none";
+      }
+
+      // ===== Insights & Case Studies =====
+      let caseStudiesHTML = "";
+      // 최대 4개까지만 렌더링
+      if (agency.caseStudies && agency.caseStudies.length > 0) {
+          const studiesToDisplay = agency.caseStudies.slice(0, 4);
+          caseStudiesHTML = studiesToDisplay.map(study => `
+            <a href="${study.url}" target="_blank" class="case-study-link" style="display:block; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:6px; color:var(--primary-color); text-decoration:none; font-weight:600; font-size:0.95rem; background:#fff;">
+              📄 ${study.title} <span style="float:right; color:var(--text-muted);">↗</span>
+            </a>
+          `).join('');
+      } else {
+          caseStudiesHTML = `
+            <div style="padding:1.5rem; border:1px dashed var(--border-color); border-radius:6px; color:var(--text-muted); font-size:0.9rem; text-align:center; background: #fafafa;">
+              Case studies and insights will be updated soon.
+            </div>
+          `;
+      }
+      document.getElementById('d-casestudies').innerHTML = caseStudiesHTML;
+      
+      // 케이스 스터디 클릭 트래킹
+      document.querySelectorAll('.case-study-link').forEach(link => {
+          link.addEventListener('click', (e) => {
+              if (window.sendTrackingData) {
+                  window.sendTrackingData("action", {
+                      action_type: "click_case_study",
+                      agency_id: agency.id,
+                      agency_name: agency.name,
+                      description: `${agency.name} 케이스 스터디 클릭: ${e.currentTarget.innerText.replace('↗', '').trim()}`
+                  });
+              }
+          });
+      });
+
+      // ===== RFQ Modal Logic =====
+      const rfqOverlay = document.getElementById('rfq-overlay');
+      const openRfqBtn = document.getElementById('open-rfq-btn');
+      const closeRfqBtn = document.getElementById('close-rfq-btn');
+      const doneRfqBtn = document.getElementById('done-rfq-btn');
+      const sendRfqBtn = document.getElementById('send-rfq-btn');
+      
+      const step1 = document.getElementById('rfq-step-1');
+      const step2 = document.getElementById('rfq-step-2');
+
+      // Set agency name in modal
+      document.getElementById('rfq-agency-name').innerText = agency.name;
+
+      // Open Modal
+      openRfqBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          rfqOverlay.classList.add('active');
+          step1.classList.add('active');
+          step2.classList.remove('active');
+          
+          // RFQ 버튼 클릭 트래킹
+          if (window.sendTrackingData) {
+              window.sendTrackingData("action", {
+                  action_type: "click_rfq_button",
+                  agency_id: agency.id,
+                  agency_name: agency.name,
+                  description: `${agency.name} RFQ(견적요청) 브로셔/버튼 열기`
+              });
+          }
+      });
+
+      // Close Modal (X button, overlay click, and Done button)
+      const closeModal = () => rfqOverlay.classList.remove('active');
+      closeRfqBtn.addEventListener('click', closeModal);
+      doneRfqBtn.addEventListener('click', closeModal);
+      rfqOverlay.addEventListener('click', (e) => {
+          if(e.target === rfqOverlay) closeModal();
+      });
+
+      // Send Request Action
+      sendRfqBtn.addEventListener('click', async () => {
+          const name = document.getElementById('rfq-name').value;
+          const email = document.getElementById('rfq-email').value;
+          const type = document.getElementById('rfq-type').value;
+          const budget = document.getElementById('rfq-budget').value;
+          const desc = document.getElementById('rfq-desc').value;
+
+          if(!name || !email || !email.includes('@')) {
+              alert("Please enter a valid name and work email.");
+              return;
+          }
+
+          // Show loading state
+          const btnText = sendRfqBtn.innerHTML;
+          sendRfqBtn.innerHTML = "Sending...";
+          sendRfqBtn.style.opacity = "0.7";
+
+          // 구글 시트 웹훅 URL (공통 URL로 통일)
+          const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyh503yBj0iVIO51Z2i7639MYfxNt7kLk0Tbhvdlf5gCmhCzugzPfcFeqkF3Tj84O_IfQ/exec";
+
+          const payload = {
+              event: "RFQ_Submission",
+              location: window.userLocation || { ip: "unknown", country: "unknown", city: "unknown", org: "unknown" },
+              data: {
+                  clientName: name,
+                  clientEmail: email,
+                  targetAgency: agency.name,
+                  targetAgencyEmails: agency.emails || [], // 이메일 발송을 위해 추가
+                  researchType: type,
+                  budget: budget,
+                  description: desc || "No description provided."
+              }
+          };
+
+          try {
+              if (WEBHOOK_URL !== "YOUR_GOOGLE_SCRIPT_WEBHOOK_URL_HERE") {
+                  await fetch(WEBHOOK_URL, {
+                      method: "POST",
+                      body: JSON.stringify(payload)
+                  });
+              } else {
+                  // 웹훅 주소가 아직 입력되지 않은 상태에서는 1초 후 성공 화면으로 넘김 (테스트용)
+                  await new Promise(r => setTimeout(r, 1000));
+                  console.warn("Webhook URL not set, simulated success.");
+              }
+
+              // Success UI
+              step1.classList.remove('active');
+              step2.classList.add('active');
+          } catch(err) {
+              console.error(err);
+              alert("Something went wrong while sending your request. Please try again or email us directly.");
+          } finally {
+              // Reset button
+              sendRfqBtn.innerHTML = btnText;
+              sendRfqBtn.style.opacity = "1";
+          }
+      });
+    });
+  </script>
+  <footer style="background: white; border-top: 1px solid var(--border-color); padding: 4rem 1rem 2rem; margin-top: 4rem;">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-weight: 800; letter-spacing: -0.02em;">Research Asia</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; max-width: 300px;">
+          The premier directory of market research agencies in the Asia-Pacific region. Find your perfect local partner.
+        </p>
+      </div>
+      <div style="display: flex; gap: 4rem; flex-wrap: wrap;">
+        <div>
+          <h4 style="color: var(--text-main); margin-bottom: 1rem; font-weight: 700;">Platform</h4>
+          <ul style="list-style: none; padding: 0; line-height: 2; margin: 0;">
+            <li><a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Directory</a></li>
+            <li><a href="update.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Add / Update Agency</a></li>
+            <li><a href="#" class="open-estimate" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Cost Estimator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--text-main); margin-bottom: 1rem; font-weight: 700;">Legal</h4>
+          <ul style="list-style: none; padding: 0; line-height: 2; margin: 0;">
+            <li><a href="privacy-policy.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Terms of Use</a></li>
+            <li><a href="mailto:directory@research-asia.com" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="border-top: 1px solid var(--border-color); margin-top: 3rem; padding-top: 2rem; color: var(--text-muted); font-size: 0.85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>&copy; 2026 Research Asia Directory. All rights reserved.</div>
+      
+    </div>
+  </footer>
+
+</body>
+</html>

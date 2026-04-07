@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Your Agency | Research Asia Directory</title>
+  <meta name="description" content="Submit or update your agency profile on the Research Asia Directory. Keep your information current for potential clients.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .update-page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .update-page h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .update-page .subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .update-form {
+      background: var(--bg-white);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+
+    .form-section {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .form-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 1rem;
+      padding-bottom: 0;
+    }
+
+    .form-section h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-main);
+      margin-bottom: 1.2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-row.full {
+      grid-template-columns: 1fr;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group label .required {
+      color: #dc2626;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-main);
+      background: var(--bg-white);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1rem;
+    }
+
+    .checkbox-grid label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.88rem;
+      font-weight: 400;
+      color: var(--text-main);
+      text-transform: none;
+      letter-spacing: 0;
+      cursor: pointer;
+    }
+
+    .checkbox-grid label input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--primary-color);
+    }
+
+    .category-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .category-group h4 {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px dotted var(--border-color);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .section-hint {
+      font-size: 0.8rem;
+      color: #0284c7;
+      margin-bottom: 1.2rem;
+      display: block;
+      background: #f0f9ff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      border-left: 3px solid #0284c7;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      letter-spacing: 0.02em;
+      margin-top: 1.5rem;
+    }
+
+    .submit-btn:hover {
+      background: var(--secondary-color);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      color: var(--primary-color);
+    }
+
+    .notice {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .notice strong {
+      color: var(--text-main);
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .success-message h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .success-message p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 640px) {
+      .form-row { grid-template-columns: 1fr; }
+      .checkbox-grid { grid-template-columns: 1fr; }
+      .update-form { padding: 1.5rem; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP607BL8P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP607BL8P9');
+  </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <div class="update-page">
+    <a href="index.html" class="back-link">← Back to Directory</a>
+
+    <h1>Update Your Agency Profile</h1>
+    <p class="subtitle">
+      Keep your agency's information current so potential clients can find and contact you&nbsp;accurately.
+      All submissions are reviewed before being published.
+    </p>
+
+    <div class="notice">
+      <strong>📋 How it works:</strong> Fill out the form below with your updated information. 
+      Our team will review and verify your submission, then update your profile within 1–2 business days.
+      You will only need to fill in the fields you want to update.
+    </div>
+
+    <!-- The Form -->
+    <form id="agency-update-form" class="update-form">
+
+      <!-- Section 1: Submitter Info -->
+      <div class="form-section">
+        <h3>Your Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name <span class="required">*</span></label>
+            <input type="text" id="submitter-name" required placeholder="e.g. John Kim">
+          </div>
+          <div class="form-group">
+            <label>Your Work Email <span class="required">*</span></label>
+            <input type="email" id="submitter-email" required placeholder="e.g. john@company.com">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Company Info -->
+      <div class="form-section">
+        <h3>Company Information</h3>
+        <div class="form-row full">
+          <div class="form-group">
+            <label style="display:flex; align-items:center; gap:0.6rem;">
+              Company Name <span class="required">*</span>
+              <button type="button" id="toggle-new-btn" onclick="toggleNewAgency()" style="font-size:0.72rem; padding:0.2rem 0.5rem; border:1px solid var(--border-dark); border-radius:4px; background:var(--bg-light); color:var(--text-muted); cursor:pointer; font-weight:600; transition:all 0.2s;">+ New Agency</button>
+            </label>
+            <input type="text" id="company-name" required placeholder="Select from list or type to search..." list="agency-list">
+            <datalist id="agency-list"></datalist>
+            <small id="new-agency-hint" style="display:none; color:#059669; font-size:0.75rem; margin-top:0.3rem;">📝 New agency mode — type your company name freely.</small>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Website</label>
+            <input type="text" id="company-website" placeholder="e.g. www.example.com">
+          </div>
+          <div class="form-group">
+            <label>Country / Region</label>
+            <select id="company-region">
+              <option value="">— Select —</option>
+              <option value="Australia">Australia</option>
+              <option value="Cambodia">Cambodia</option>
+              <option value="China">China</option>
+              <option value="Hong Kong">Hong Kong</option>
+              <option value="India">India</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Iran">Iran</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Israel">Israel</option>
+              <option value="Japan">Japan</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Kazakhstan">Kazakhstan</option>
+              <option value="KSA">KSA</option>
+              <option value="Korea">South Korea</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Mongolia">Mongolia</option>
+              <option value="Newzealand">New Zealand</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Russia">Russia</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Taiwan">Taiwan</option>
+              <option value="Thailand">Thailand</option>
+              <option value="UAE">UAE</option>
+              <option value="Uzbekistan">Uzbekistan</option>
+              <option value="Vietnam">Vietnam</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Key Contact Person</label>
+            <input type="text" id="key-person" placeholder="e.g. Mr. Rajesh Sharma">
+          </div>
+          <div class="form-group">
+            <label>Contact Email</label>
+            <input type="email" id="contact-email" placeholder="e.g. contact@company.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Founded Year</label>
+            <input type="number" id="founded-year" placeholder="e.g. 2010" min="1900" max="2030">
+          </div>
+          <div class="form-group">
+            <label>Number of Employees</label>
+            <select id="employees">
+              <option value="">— Select —</option>
+              <option value="1-10">1 – 10</option>
+              <option value="11-50">11 – 50</option>
+              <option value="51-200">51 – 200</option>
+              <option value="201-500">201 – 500</option>
+              <option value="500+">500+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Company Description (About the Agency)</label>
+            <textarea id="company-description" placeholder="Tell us about your agency, strengths, and specialties..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Services & Capabilities -->
+      <div class="form-section">
+        <h3>Research Services <span style="font-weight:normal; color:var(--text-muted); font-size:0.8rem; text-transform:none;">(Max 5)</span></h3>
+        <span class="section-hint">Please select up to 5 core competencies to help clients focus on your primary expertise.</span>
+        
+        <div id="services-section" class="limit-group" data-max="5">
+          <div class="category-group">
+            <h4>Domains</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Social & Public"> Social & Public</label>
+              <label><input type="checkbox" value="Healthcare & Pharma"> Healthcare & Pharma</label>
+              <label><input type="checkbox" value="Shopper & Retail"> Shopper & Retail</label>
+              <label><input type="checkbox" value="Employee & Organizational"> Employee & Organizational</label>
+              <label><input type="checkbox" value="Media & Audience"> Media & Audience</label>
+              <label><input type="checkbox" value="Consumers"> Consumers</label>
+              <label><input type="checkbox" value="Users"> Users</label>
+              <label><input type="checkbox" value="AI"> AI</label>
+              <label><input type="checkbox" value="B2B"> B2B</label>
+            </div>
+          </div>
+          <div class="category-group">
+            <h4>Qualitative</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Focus Groups"> Focus Groups</label>
+              <label><input type="checkbox" value="Indepth Interview"> Indepth Interview</label>
+              <label><input type="checkbox" value="Ethnography"> Ethnography</label>
+              <label><input type="checkbox" value="Mobile Diaries"> Mobile Diaries</label>
+              <label><input type="checkbox" value="Qualboard"> Qualboard</label>
+            </div>
+          </div>
+          <div class="category-group">
+            <h4>Quantitative</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Online Surveys"> Online Surveys</label>
+              <label><input type="checkbox" value="Face to Face Interview"> Face to Face Interview</label>
+              <label><input type="checkbox" value="Panel Management"> Panel Management</label>
+              <label><input type="checkbox" value="Data Visualisation"> Data Visualisation</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Research Solutions <span style="font-weight:normal; color:var(--text-muted); font-size:0.8rem; text-transform:none;">(Max 5)</span></h3>
+        
+        <div id="solutions-section" class="limit-group" data-max="5">
+          <div class="category-group">
+            <h4>Market Understanding</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Segmentation"> Segmentation</label>
+              <label><input type="checkbox" value="U&A Studies"> U&A Studies</label>
+              <label><input type="checkbox" value="Market Sizing"> Market Sizing</label>
+            </div>
+          </div>
+          <div class="category-group">
+            <h4>Product & Innovation</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Concept Testing"> Concept Testing</label>
+              <label><input type="checkbox" value="Idea Workshop"> Idea Workshop</label>
+              <label><input type="checkbox" value="Product & iHUT"> Product & iHUT</label>
+              <label><input type="checkbox" value="Packaging / Design"> Packaging / Design</label>
+              <label><input type="checkbox" value="Pricing Studies"> Pricing Studies</label>
+            </div>
+          </div>
+          <div class="category-group">
+            <h4>Brand & Customer Exp.</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Brand Tracking"> Brand Tracking</label>
+              <label><input type="checkbox" value="Ad / Copy Testing"> Ad / Copy Testing</label>
+              <label><input type="checkbox" value="CSAT & NPS"> CSAT & NPS</label>
+              <label><input type="checkbox" value="UX / UI Testing"> UX / UI Testing</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Facilities <span style="font-weight:normal; color:var(--text-muted); font-size:0.8rem; text-transform:none;">(Max 5)</span></h3>
+        
+        <div id="facilities-section" class="limit-group" data-max="5">
+          <div class="category-group">
+            <h4>Facility Capabilities</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Focus Group Room"> Focus Group Room</label>
+              <label><input type="checkbox" value="Central Location Test"> Central Location Test</label>
+              <label><input type="checkbox" value="Test Kitchen"> Test Kitchen</label>
+              <label><input type="checkbox" value="Sensory Test Room"> Sensory Test Room</label>
+              <label><input type="checkbox" value="UX Testing Lab"> UX Testing Lab</label>
+              <label><input type="checkbox" value="Viewing Room (One-way)"> Viewing Room (One-way)</label>
+            </div>
+          </div>
+          <div class="category-group">
+            <h4>Fieldwork facility</h4>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" value="Call Booth"> Call Booth</label>
+              <label><input type="checkbox" value="Online Streaming"> Online Streaming</label>
+              <label><input type="checkbox" value="Survey Platform"> Survey Platform</label>
+              <label><input type="checkbox" value="AI moderator"> AI moderator</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Insights & Case Study -->
+      <div class="form-section">
+        <h3>Insights & Case Study <span style="font-weight:normal; color:var(--text-muted); font-size:0.8rem; text-transform:none;">(Optional, Max 3)</span></h3>
+        <span class="section-hint">Provide up to 3 links to your best case studies or insight pieces.</span>
+        <div class="form-row full">
+          <div class="form-group">
+            <input type="url" id="case-study-link-1" placeholder="Link 1: e.g. https://your-agency.com/case-study-1">
+          </div>
+          <div class="form-group" style="margin-top:0.5rem;">
+            <input type="url" id="case-study-link-2" placeholder="Link 2: e.g. https://your-agency.com/case-study-2">
+          </div>
+          <div class="form-group" style="margin-top:0.5rem;">
+            <input type="url" id="case-study-link-3" placeholder="Link 3: e.g. https://your-agency.com/case-study-3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Additional Notes -->
+      <div class="form-section">
+        <h3>Additional Notes</h3>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Anything else you'd like us to know?</label>
+            <textarea id="additional-notes" placeholder="e.g. We recently merged with another agency, changed our contact person, etc."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">Submit Update Request</button>
+    </form>
+
+    <!-- Success Message (shown after submit) -->
+    <div class="success-message" id="success-message">
+      <h2>✅ Submission Received!</h2>
+      <p>
+        Thank you for updating your agency profile. Our team will review your submission 
+        and apply the changes within 1–2 business days.
+        <br><br>
+        <a href="index.html" style="color: var(--primary-color); font-weight: 600;">← Return to Directory</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Toggle between existing agency list and new agency free-text
+    let isNewMode = false;
+    function toggleNewAgency() {
+      isNewMode = !isNewMode;
+      const input = document.getElementById('company-name');
+      const btn = document.getElementById('toggle-new-btn');
+      const hint = document.getElementById('new-agency-hint');
+
+      if (isNewMode) {
+        input.removeAttribute('list');
+        input.value = '';
+        input.placeholder = 'Type your new company name...';
+        btn.textContent = '↩ Back to List';
+        btn.style.background = '#059669';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#059669';
+        hint.style.display = 'block';
+      } else {
+        input.setAttribute('list', 'agency-list');
+        input.value = '';
+        input.placeholder = 'Select from list or type to search...';
+        btn.textContent = '+ New Agency';
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.style.borderColor = '';
+        hint.style.display = 'none';
+      }
+    }
+
+    // Populate agency autocomplete list from agencies.js
+    const script = document.createElement('script');
+    script.src = 'agencies.js';
+    script.onload = function() {
+      if (typeof REAL_AGENCIES !== 'undefined') {
+        const datalist = document.getElementById('agency-list');
+        REAL_AGENCIES.forEach(a => {
+          const opt = document.createElement('option');
+          opt.value = a.name;
+          datalist.appendChild(opt);
+        });
+      }
+    };
+    document.head.appendChild(script);
+
+    // Form submission → Google Sheets Webhook
+    const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyh503yBj0iVIO51Z2i7639MYfxNt7kLk0Tbhvdlf5gCmhCzugzPfcFeqkF3Tj84O_IfQ/exec';
+
+      // Checkbox Limit Enforcement (Max 5 per limit-group)
+      document.querySelectorAll('.limit-group').forEach(group => {
+        const max = parseInt(group.getAttribute('data-max'), 10);
+        const checkboxes = group.querySelectorAll('input[type="checkbox"]');
+        
+        checkboxes.forEach(cb => {
+          cb.addEventListener('change', () => {
+            const checkedCount = group.querySelectorAll('input[type="checkbox"]:checked').length;
+            if (checkedCount > max) {
+              cb.checked = false;
+              alert(`You can only select a maximum of ${max} items per section to highlight your core expertise.`);
+            }
+          });
+        });
+      });
+
+      document.getElementById('agency-update-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const btn = document.getElementById('submit-btn');
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
+
+        // Helper to handle empty text fields
+        function getVal(id) {
+          const val = document.getElementById(id).value.trim();
+          return val === '' ? '[Keep existing]' : val;
+        }
+
+        // Collect checked values by section
+        function getChecked(sectionId) {
+          const vals = Array.from(document.querySelectorAll(`#${sectionId} input:checked`)).map(cb => cb.value);
+          return vals.length === 0 ? '[Keep existing]' : vals.join(', ');
+        }
+
+        const payload = {
+          timestamp: new Date().toISOString(),
+          submitterName: getVal('submitter-name'),
+          submitterEmail: getVal('submitter-email'),
+          companyName: getVal('company-name'),
+          website: getVal('company-website'),
+          region: getVal('company-region'),
+          keyPerson: getVal('key-person'),
+          contactEmail: getVal('contact-email'),
+          foundedYear: getVal('founded-year'),
+          employees: getVal('employees'),
+          description: getVal('company-description'),
+          services: getChecked('services-section'),
+          solutions: getChecked('solutions-section'),
+          facilities: getChecked('facilities-section'),
+          caseStudy1: getVal('case-study-link-1'),
+          caseStudy2: getVal('case-study-link-2'),
+          caseStudy3: getVal('case-study-link-3'),
+          notes: getVal('additional-notes'),
+          status: 'Pending'
+        };
+
+        const dataToLog = {
+          event: "agency_update",
+          timestamp: payload.timestamp,
+          data: payload
+        };
+
+      try {
+        if (WEBHOOK_URL) {
+          await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dataToLog)
+          });
+        } else {
+          console.log('WEBHOOK_URL not set. Payload:', payload);
+        }
+
+        // Show success
+        document.getElementById('agency-update-form').style.display = 'none';
+        document.querySelector('.notice').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+      } catch (err) {
+        alert('Something went wrong. Please try again or contact us directly.');
+        btn.disabled = false;
+        btn.textContent = 'Submit Update Request';
+      }
+    });
+  </script>
+
+  <footer style="background: white; border-top: 1px solid var(--border-color); padding: 4rem 1rem 2rem; margin-top: 4rem;">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-weight: 800; letter-spacing: -0.02em;">Research Asia</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; max-width: 300px;">
+          The premier directory of market research agencies in the Asia-Pacific region. Find your perfect local partner.
+        </p>
+      </div>
+      <div style="display: flex; gap: 4rem; flex-wrap: wrap;">
+        <div>
+          <h4 style="color: var(--text-main); margin-bottom: 1rem; font-weight: 700;">Platform</h4>
+          <ul style="list-style: none; padding: 0; line-height: 2; margin: 0;">
+            <li><a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Directory</a></li>
+            <li><a href="update.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Add / Update Agency</a></li>
+            <li><a href="#" class="open-estimate" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Cost Estimator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--text-main); margin-bottom: 1rem; font-weight: 700;">Legal</h4>
+          <ul style="list-style: none; padding: 0; line-height: 2; margin: 0;">
+            <li><a href="privacy-policy.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Terms of Use</a></li>
+            <li><a href="mailto:directory@research-asia.com" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="border-top: 1px solid var(--border-color); margin-top: 3rem; padding-top: 2rem; color: var(--text-muted); font-size: 0.85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>&copy; 2026 Research Asia Directory. All rights reserved.</div>
+      
+    </div>
+  </footer>
+
+</body>
+</html>
