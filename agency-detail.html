@@ -354,7 +354,7 @@
 
           const payload = {
               event: "RFQ_Submission",
-              location: window.userLocation || { ip: "Client", country: agency.region, city: agency.name, org: "" },
+              location: window.userLocation || { ip: "unknown", country: "unknown", city: "unknown", org: "unknown" },
               data: {
                   clientName: name,
                   clientEmail: email,
