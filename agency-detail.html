@@ -348,16 +348,17 @@
           sendRfqBtn.innerHTML = "Sending...";
           sendRfqBtn.style.opacity = "0.7";
 
-          // 구글 시트 웹훅 URL
-          const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwp0YK4NnZvwLs-YDLNlYrYl8g13iafc1RK7Syxo9492I7BT_cJB2t4W8tphoNjxtBOEg/exec";
+          // 구글 시트 웹훅 URL (공통 URL로 통일)
+          const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbw4N26EUpWSCq-I2UzFUR0ggQKIyIM1Nk90F6TH0ou3vmlz1RGCxFQyR0DDzoUE1eAgnw/exec";
 
           const payload = {
               event: "RFQ_Submission",
-              location: { ip: "Client", country: agency.region, city: agency.name, org: "" },
+              location: window.userLocation || { ip: "Client", country: agency.region, city: agency.name, org: "" },
               data: {
                   clientName: name,
                   clientEmail: email,
                   targetAgency: agency.name,
+                  targetAgencyEmails: agency.emails || [], // 이메일 발송을 위해 추가
                   researchType: type,
                   budget: budget,
                   description: desc || "No description provided."
