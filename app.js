@@ -104,7 +104,7 @@ function initApplication() {
 
   // ============== DATA TRACKING LOGIC (Webhooks / Google Sheets) ==============
   // 정적 호스팅(가비아)에서는 DB가 없으므로 Make(Integromat), Zapier 또는 구글 앱스 스크립트 웹훅 URL로 데이터를 쏩니다.
-  const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycby7ZqPgV5kZbfrmSpuhvQu0SbGneKJMd9uacO3dng-urLMgmkz6snnlDJUH7v3v_m9qsg/exec";
+  const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzXEq0sUwTAji28r20A3ckclI3PrEMeM9JeCDBuQ0NSNJmjfB7qD6WyGpHb5tu_ULH8ZA/exec";
 
   let userLocation = null;
 
