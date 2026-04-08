@@ -1560,7 +1560,7 @@ const REAL_AGENCIES = [
     "employees": "N/A",
     "detailUrl": "",
     "emails": [
-      "Cambodia@BMRS-Asia.com"
+      "Thailand@BMRS-Asia.com"
     ],
     "keyPeople": [],
     "services": [
