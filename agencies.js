@@ -7703,5 +7703,60 @@ const REAL_AGENCIES = [
       "Customer Experience"
     ],
     "facility": []
+  },
+  {
+    "id": "brandscapes-worldwide-india",
+    "name": "BRANDSCAPES WORLDWIDE INDIA",
+    "tagline": "Brandscapes India is part of the Brandscapes Worldwide network, offering end-to-end research and insights solutions acro...",
+    "longDescription": "Brandscapes India is part of the Brandscapes Worldwide network, offering end-to-end research and insights solutions across the Indian market. With deep local expertise, Brandscapes India delivers consumer, shopper, and retail research to help brands navigate one of the world's most diverse and fast-growing markets.",
+    "website": "http://www.brandscapesworldwide.com",
+    "tags": [
+      "Shopper & Retail",
+      "Consumers",
+      "Users",
+      "Focus Groups",
+      "Online Surveys",
+      "Segmentation",
+      "U&A Studies",
+      "Concept Testing",
+      "Idea Workshop",
+      "Brand Tracking",
+      "Online Streaming",
+      "Survey Platform"
+    ],
+    "region": "India",
+    "founded": "N/A",
+    "minProjectSize": "N/A",
+    "employees": "N/A",
+    "detailUrl": "",
+    "emails": [
+      "mayuresh.utgikar@brand-scapes.com"
+    ],
+    "keyPeople": [
+      {
+        "name": "Mayuresh Utgikar",
+        "role": "Key Contact"
+      }
+    ],
+    "services": [
+      "Shopper & Retail",
+      "Consumers",
+      "Users",
+      "Focus Groups",
+      "Online Surveys"
+    ],
+    "solutions": [
+      "Segmentation",
+      "U&A Studies",
+      "Concept Testing",
+      "Idea Workshop",
+      "Brand Tracking"
+    ],
+    "facility": [
+      "Online Streaming",
+      "Survey Platform"
+    ],
+    "contact": "Mayuresh Utgikar",
+    "email": "mayuresh.utgikar@brand-scapes.com"
   }
 ];
