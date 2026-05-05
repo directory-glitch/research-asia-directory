@@ -7848,5 +7848,52 @@ const REAL_AGENCIES = [
     ],
     "contact": "Danish",
     "email": "info@1plus1research.com"
+  },
+  {
+    "id": "moweb-research-gmbh",
+    "name": "moweb research GmbH",
+    "tagline": "The panel for your research with 3+ million members and 20+ years of experience.",
+    "longDescription": "moweb research supplies market research institutes, agencies and brands with verified, high-quality online panelists - across all markets, languages and research formats. Based in D\u00fcsseldorf, Germany, we have been building, developing and managing panels since 2004, with one goal: giving your study access to exactly the right respondents. Whether you are running a quick pulse survey or a complex multi-country study, we provide the sample infrastructure that serious research demands.\n\nOur panels are not sourced through brokers or aggregators. Every member has been recruited, profiled, and validated directly by moweb - which means cleaner data, highest response quality, and absolute reliability in the field. With over 3 million active members and continuous panel maintenance, the people you reach are real, engaged, and accurately represented.\n\nSpeed matters in research. We offer same-day feasibility estimates, rapid fielding timelines, and a team of experienced panel consultants who work with you from briefing to delivery \u2014 advising on sample design, incidence assumptions, and quality thresholds to make your study as robust as possible.\n\n- 3M+ active panel members - continuously profiled, verified and actively maintained\n- B2C & B2B panels - from everyday consumers to hard-to-reach decision-makers\n- Global reach in 30+ countries - global sampling across all major markets\n- Same-day feasibility estimates - fast, reliable fielding for tight project timelines\n- Owned panel infrastructure - no brokers, no intermediaries, direct access to proprietary panel\n- Personal advisory - expert support from briefing to delivery",
+    "website": "https://www.mowebresearch.com/en/",
+    "tags": [
+      "Shopper & Retail",
+      "Consumers",
+      "B2B",
+      "Online Surveys",
+      "Panel Management"
+    ],
+    "region": "Germany",
+    "founded": "2004",
+    "minProjectSize": "N/A",
+    "employees": "11-50",
+    "detailUrl": "",
+    "emails": [
+      "o.tjarks@mo-web.net"
+    ],
+    "keyPeople": [
+      {
+        "name": "Oliver Tjarks",
+        "role": "Key Contact"
+      }
+    ],
+    "services": [
+      "Shopper & Retail",
+      "Consumers",
+      "B2B",
+      "Online Surveys",
+      "Panel Management"
+    ],
+    "solutions": [
+      "Segmentation",
+      "Concept Testing",
+      "Packaging / Design",
+      "Brand Tracking",
+      "UX / UI Testing"
+    ],
+    "facility": [
+      "Survey Platform"
+    ],
+    "contact": "Oliver Tjarks",
+    "email": "o.tjarks@mo-web.net"
   }
 ];
