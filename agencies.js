@@ -7894,6 +7894,12 @@ const REAL_AGENCIES = [
       "Survey Platform"
     ],
     "contact": "Oliver Tjarks",
-    "email": "o.tjarks@mo-web.net"
+    "email": "o.tjarks@mo-web.net",
+    "caseStudies": [
+      {
+        "title": "Study Compass Gen Z: On the lives of young people in Germany",
+        "url": "https://www.mowebresearch.com/en/news/article/r/id/study_compass_gen_z_on_the_lives_of_young_people_in_germany/"
+      }
+    ]
   }
 ];
