@@ -7961,5 +7961,72 @@ const REAL_AGENCIES = [
         "url": "https://www.linkedin.com/pulse/how-market-research-companies-can-include-hispanic-us-castro-m-ed-7vgoe%3FtrackingId=tk3pFhoLRgW%252BxA9GO9T5Dw%253D%253D/?trackingId=tk3pFhoLRgW%2BxA9GO9T5Dw%3D%3D"
       }
     ]
+  },
+  {
+    "id": "advantage-market-intelligence",
+    "name": "Advantage Market Intelligence",
+    "tagline": "Advantage was founded in the UK in 2014 and expanded to Peru in 2019, creating a unique combination of European research...",
+    "longDescription": "Advantage was founded in the UK in 2014 and expanded to Peru in 2019, creating a unique combination of European research standards and deep Latin American market expertise.\n\n​\n\nToday, we deliver the majority of our work across Latin America, supporting international clients with high-quality market research services throughout the region. Our experience includes projects such as political research in Puerto Rico, retail audits in Bolivia, concept testing in Guatemala, and bilingual focus groups with simultaneous translation for visiting client teams in Colombia.\n\n​\n\nWe regularly manage research in Latin America’s key markets, including Brazil, Mexico, Argentina, Chile, and beyond. Through a trusted network of local partners, recruiters, moderators, and interviewers across Latin America and the Caribbean, we are able to scale quickly and deliver insight with genuine local understanding.\n\n​\n\nAll projects are led and delivered by our experienced team, providing international clients with a reliable Latin America market research partner for qualitative research, fieldwork, and surveys—wherever insight is needed most.",
+    "website": "https://www.advantagemi.com.pe/",
+    "tags": [
+      "Focus Groups",
+      "Indepth Interview",
+      "Online Surveys",
+      "Face to Face Interview",
+      "Panel Management",
+      "Segmentation",
+      "Market Sizing",
+      "Concept Testing",
+      "Pricing Studies",
+      "UX / UI Testing",
+      "Survey Platform"
+    ],
+    "region": "United Kingdom",
+    "founded": "2014",
+    "minProjectSize": "N/A",
+    "employees": "1-10",
+    "detailUrl": "",
+    "emails": [
+      "claudiav@advantagemi.com.pe"
+    ],
+    "keyPeople": [
+      {
+        "name": "Claudia Vega",
+        "role": "Key Contact"
+      }
+    ],
+    "services": [
+      "Focus Groups",
+      "Indepth Interview",
+      "Online Surveys",
+      "Face to Face Interview",
+      "Panel Management"
+    ],
+    "solutions": [
+      "Segmentation",
+      "Market Sizing",
+      "Concept Testing",
+      "Pricing Studies",
+      "UX / UI Testing"
+    ],
+    "facility": [
+      "Survey Platform"
+    ],
+    "contact": "Claudia Vega",
+    "email": "claudiav@advantagemi.com.pe",
+    "caseStudies": [
+      {
+        "title": "View Case Study",
+        "url": "https://www.advantagemi.com.pe/experience"
+      },
+      {
+        "title": "View Case Study",
+        "url": "https://www.advantagemi.com.pe/"
+      },
+      {
+        "title": "View Case Study",
+        "url": "https://www.advantagemi.com.pe/"
+      }
+    ]
   }
 ];
