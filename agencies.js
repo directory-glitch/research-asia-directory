@@ -8028,5 +8028,66 @@ const REAL_AGENCIES = [
         "url": "https://www.advantagemi.com.pe/"
       }
     ]
+  },
+  {
+    "id": "inveritas-research-azerbaijan",
+    "name": "InVeritas Research - Azerbaijan",
+    "tagline": "nVeritas Research is a global full service quantitative and qualitative market research Fieldwork Company committed to p...",
+    "longDescription": "nVeritas Research is a global full service quantitative and qualitative market research Fieldwork Company committed to providing high-quality data collection, market research, opinion mining, sentiment analysis services to companies worldwide.\n\nWe ensure that the fieldwork for your research provides accurate, unbiased and actionable insights for your business needs with the help of our team of highly experienced project directors who have worked in different levels in FMCG, Automobile, Healthcare, Pharmaceuticals, Medical Devices, Telecom, Finance and Travel & tourism industry.\n\nHaving in-depth experience in understanding and applying suitable methodologies across a wide range of different industries, geographies, and cultures, we provide timely and accurate recommendations to our clients business. This gives our clients a leading edge in their marketing decisions.\n\nWith a panel strength of more than 5 Million, our research audiences are from different geography, culture and sectors which includes but are not limited to C- level executive including VPs, department heads and directors, finance professionals, IT/IS decision makers, consumers, physicians, nurses, pharmacists, patients and caregivers ,Payors and healthcare decision makers.",
+    "website": "https://inveritasresearch.com/",
+    "tags": [
+      "Consumers",
+      "Focus Groups",
+      "Indepth Interview",
+      "Online Surveys",
+      "Face to Face Interview",
+      "Concept Testing",
+      "Product & iHUT",
+      "Brand Tracking",
+      "CSAT & NPS",
+      "UX / UI Testing",
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Online Streaming",
+      "Survey Platform"
+    ],
+    "region": "",
+    "founded": "2009",
+    "minProjectSize": "N/A",
+    "employees": "11-50",
+    "detailUrl": "",
+    "emails": [
+      "info@inveritasresearch.com"
+    ],
+    "keyPeople": [
+      {
+        "name": "Aziz",
+        "role": "Key Contact"
+      }
+    ],
+    "services": [
+      "Consumers",
+      "Focus Groups",
+      "Indepth Interview",
+      "Online Surveys",
+      "Face to Face Interview"
+    ],
+    "solutions": [
+      "Concept Testing",
+      "Product & iHUT",
+      "Brand Tracking",
+      "CSAT & NPS",
+      "UX / UI Testing"
+    ],
+    "facility": [
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Online Streaming",
+      "Survey Platform"
+    ],
+    "contact": "Aziz",
+    "email": "info@inveritasresearch.com"
   }
 ];
