@@ -8089,5 +8089,66 @@ const REAL_AGENCIES = [
     ],
     "contact": "Aziz",
     "email": "info@inveritasresearch.com"
+  },
+  {
+    "id": "beerka-research",
+    "name": "Beerka Research",
+    "tagline": "Beerka Research provides solutions for business leaders and policymakers who often struggle to anticipate shifts in cons...",
+    "longDescription": "Beerka Research provides solutions for business leaders and policymakers who often struggle to anticipate shifts in consumer behavior. This is due to the rapidly changing industry landscape and shallow research data. By navigating quantifiable data from the ICSX Benchmark, we objectively map consumer experiences. With this in-depth understanding, leaders can identify potential business risks early and make effective strategic decisions.",
+    "website": "www.beerka.coid",
+    "tags": [
+      "Shopper & Retail",
+      "Consumers",
+      "B2B",
+      "Focus Groups",
+      "Online Surveys",
+      "Segmentation",
+      "Market Sizing",
+      "Concept Testing",
+      "Brand Tracking",
+      "CSAT & NPS",
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Online Streaming",
+      "Survey Platform"
+    ],
+    "region": "Indonesia",
+    "founded": "2016",
+    "minProjectSize": "N/A",
+    "employees": "11-50",
+    "detailUrl": "",
+    "emails": [
+      "adit@beerka.co.id"
+    ],
+    "keyPeople": [
+      {
+        "name": "Aditya",
+        "role": "Key Contact"
+      }
+    ],
+    "services": [
+      "Shopper & Retail",
+      "Consumers",
+      "B2B",
+      "Focus Groups",
+      "Online Surveys"
+    ],
+    "solutions": [
+      "Segmentation",
+      "Market Sizing",
+      "Concept Testing",
+      "Brand Tracking",
+      "CSAT & NPS"
+    ],
+    "facility": [
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Online Streaming",
+      "Survey Platform"
+    ],
+    "contact": "Aditya",
+    "email": "adit@beerka.co.id"
   }
 ];
