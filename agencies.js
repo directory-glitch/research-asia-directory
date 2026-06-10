@@ -8150,5 +8150,66 @@ const REAL_AGENCIES = [
     ],
     "contact": "Aditya",
     "email": "adit@beerka.co.id"
+  },
+  {
+    "id": "field-interactive-mr-pvt-ltd",
+    "name": "Field Interactive MR Pvt Ltd",
+    "tagline": "Field Interactive MR is a global fieldwork and desk research agency offer a multi-market project management team that co...",
+    "longDescription": "Field Interactive MR is a global fieldwork and desk research agency offer a multi-market project management team that covers across the world, and recruiting capabilities for any type of project in any location. We offer solutions and support for all qualitative and quantitative research methodologies including online research/surveys, ethnographic research, usability research, convention research, taste tests, product trials, in-home interviews, shop-along interviews, phone interviews, focus groups, Simultaneous translation and  transcriptions.\n\nWe have a team dedicated to managing multi-market studies from start to finish. We have carefully vetted and established partnerships PAN India and the world. Our national and International team has navigated the unique fieldwork management cultures of over 98 countries.\n\nWe are completely committed to providing a high standard of chatty, creative & articulate respondent and also executing global market research code of business ethics for entire projects.\n\nProfessional Affiliation: ESOMAR , MRSI",
+    "website": "https://fieldinteractive-mr.com/",
+    "tags": [
+      "Consumers",
+      "Users",
+      "B2B",
+      "Focus Groups",
+      "Face to Face Interview",
+      "U&A Studies",
+      "Product & iHUT",
+      "Pricing Studies",
+      "Brand Tracking",
+      "UX / UI Testing",
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Call Booth",
+      "Online Streaming"
+    ],
+    "region": "India",
+    "founded": "2016",
+    "minProjectSize": "N/A",
+    "employees": "11-50",
+    "detailUrl": "",
+    "emails": [
+      "ravi.roy@fieldinteractive-mr.com"
+    ],
+    "keyPeople": [
+      {
+        "name": "Ravi Roy",
+        "role": "Key Contact"
+      }
+    ],
+    "services": [
+      "Consumers",
+      "Users",
+      "B2B",
+      "Focus Groups",
+      "Face to Face Interview"
+    ],
+    "solutions": [
+      "U&A Studies",
+      "Product & iHUT",
+      "Pricing Studies",
+      "Brand Tracking",
+      "UX / UI Testing"
+    ],
+    "facility": [
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Call Booth",
+      "Online Streaming"
+    ],
+    "contact": "Ravi Roy",
+    "email": "ravi.roy@fieldinteractive-mr.com"
   }
 ];
