@@ -8211,5 +8211,65 @@ const REAL_AGENCIES = [
     ],
     "contact": "Ravi Roy",
     "email": "ravi.roy@fieldinteractive-mr.com"
+  },
+  {
+    "id": "data-search-india",
+    "name": "Data Search India",
+    "website": "www.datasearchindia.net",
+    "region": "India",
+    "contact": "Sandip Roy",
+    "email": "ssroysandip@gmail.com",
+    "founded": "1999",
+    "employees": "1-10",
+    "longDescription": "Global Fieldwork and Project Management Agency.",
+    "tagline": "Global Fieldwork and Project Management Agency.",
+    "services": [
+      "Social & Public",
+      "Healthcare & Pharma",
+      "Shopper & Retail",
+      "Consumers",
+      "B2B"
+    ],
+    "solutions": [
+      "U&A Studies",
+      "Market Sizing",
+      "Concept Testing",
+      "Pricing Studies",
+      "Brand Tracking"
+    ],
+    "facility": [
+      "Focus Group Room",
+      "Central Location Test",
+      "Test Kitchen",
+      "Viewing Room (One-way)",
+      "Online Streaming"
+    ],
+    "tags": [
+      "Social & Public",
+      "Healthcare & Pharma",
+      "Shopper & Retail",
+      "Consumers",
+      "B2B",
+      "U&A Studies",
+      "Market Sizing",
+      "Concept Testing",
+      "Pricing Studies",
+      "Brand Tracking",
+      "Focus Group Room",
+      "Central Location Test",
+      "Test Kitchen",
+      "Viewing Room (One-way)",
+      "Online Streaming"
+    ],
+    "emails": [
+      "ssroysandip@gmail.com"
+    ],
+    "keyPeople": [
+      {
+        "name": "Sandip Roy",
+        "role": "Key Contact"
+      }
+    ],
+    "detailUrl": ""
   }
 ];

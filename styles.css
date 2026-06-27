@@ -657,12 +657,141 @@ body {
   to { opacity: 1; }
 }
 
-/* Responsive */
+/* ================== Responsive (Mobile Optimization) ================== */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; }
-  .search-input { padding-right: 1rem; }
-  .search-btn { position: relative; margin-top: 1rem; width: 100%; right: 0; padding: 1rem; }
-  .agency-card { flex-direction: column; align-items: flex-start; }
-  .agency-stats { text-align: left; margin-top: 1.5rem; }
-  .detail-grid { grid-template-columns: 1fr; }
+  /* Global / Base */
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  /* Form Inputs: Prevent iOS Zoom (needs 16px minimum) */
+  .input-group select, .input-group input, .input-group textarea, .search-input {
+    font-size: 16px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 2.5rem 1rem 3.5rem;
+  }
+  .hero h1 { 
+    font-size: 2.2rem; 
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Search Container */
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .search-input { 
+    padding: 1rem 1.25rem; 
+    /* Remove the large right padding since button will stack */
+  }
+  .search-btn { 
+    position: relative; 
+    top: auto; right: auto; bottom: auto; 
+    width: 100%; 
+    padding: 1rem; 
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  .update-agency-btn {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* Filter Tabs */
+  .filter-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem; /* Space for scrollbar */
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    margin: 0 -1.25rem; /* Break out of container for full edge-to-edge scroll */
+    padding: 0 1.25rem 0.75rem 1.25rem;
+  }
+  .filter-tabs::-webkit-scrollbar {
+    height: 4px;
+  }
+  .filter-tabs::-webkit-scrollbar-thumb {
+    background: var(--border-dark);
+    border-radius: 4px;
+  }
+  .filter-tab, .clear-filter-btn {
+    white-space: nowrap;
+    padding: 0.6rem 1rem;
+  }
+
+  /* Filter Dropdowns */
+  .filter-dropdown {
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Agency Cards */
+  .agency-card { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 1.5rem;
+  }
+  .agency-info h3 {
+    font-size: 1.2rem;
+  }
+  .agency-stats { 
+    text-align: left; 
+    margin-top: 1.5rem; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+  }
+  .agency-stats > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .view-btn {
+    margin-top: 0;
+  }
+
+  /* Detail Page */
+  .detail-header {
+    padding: 2.5rem 0;
+  }
+  .detail-title {
+    font-size: 2rem;
+  }
+  .detail-grid { 
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  
+  /* Modals */
+  .modal-content {
+    padding: 2rem 1.5rem;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .modal-close {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
 }
