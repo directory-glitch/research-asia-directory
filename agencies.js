@@ -8095,7 +8095,7 @@ const REAL_AGENCIES = [
     "name": "Beerka Research",
     "tagline": "Beerka Research provides solutions for business leaders and policymakers who often struggle to anticipate shifts in cons...",
     "longDescription": "Beerka Research provides solutions for business leaders and policymakers who often struggle to anticipate shifts in consumer behavior. This is due to the rapidly changing industry landscape and shallow research data. By navigating quantifiable data from the ICSX Benchmark, we objectively map consumer experiences. With this in-depth understanding, leaders can identify potential business risks early and make effective strategic decisions.",
-    "website": "www.beerka.coid",
+    "website": "https://www.beerka.co.id",
     "tags": [
       "Shopper & Retail",
       "Consumers",
@@ -8271,5 +8271,77 @@ const REAL_AGENCIES = [
       }
     ],
     "detailUrl": ""
+  },
+  {
+    "id": "uxrplayer",
+    "name": "UXRPLAYER",
+    "website": "https://UXRPLAYER.com",
+    "region": "Korea",
+    "contact": "Jay Ahn",
+    "email": "directresearchkorea@gmail.com",
+    "founded": "2015",
+    "employees": "1-10",
+    "longDescription": "UXR Player is an analytical research platform and resource provider delivering user experience (UX) insights, market behavior analysis, and consumer trend reports tailored to the Asian gaming and digital markets.",
+    "tagline": "UXR Player is an analytical research platform and resource provider delivering user experience (UX) insights, market beh...",
+    "services": [
+      "Users",
+      "AI",
+      "Indepth Interview",
+      "Ethnography",
+      "Data Visualisation"
+    ],
+    "solutions": [
+      "U&A Studies",
+      "Concept Testing",
+      "Idea Workshop",
+      "UX / UI Testing"
+    ],
+    "facility": [
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Viewing Room (One-way)",
+      "Survey Platform"
+    ],
+    "tags": [
+      "Users",
+      "AI",
+      "Indepth Interview",
+      "Ethnography",
+      "Data Visualisation",
+      "U&A Studies",
+      "Concept Testing",
+      "Idea Workshop",
+      "UX / UI Testing",
+      "Focus Group Room",
+      "Central Location Test",
+      "UX Testing Lab",
+      "Viewing Room (One-way)",
+      "Survey Platform"
+    ],
+    "emails": [
+      "directresearchkorea@gmail.com"
+    ],
+    "keyPeople": [
+      {
+        "name": "Jay Ahn",
+        "role": "Key Contact"
+      }
+    ],
+    "detailUrl": "",
+    "caseStudies": [
+      {
+        "title": "View Case Study",
+        "url": "https://www.uxrplayer.com/videography/index.html"
+      },
+      {
+        "title": "View Case Study",
+        "url": "https://www.uxrplayer.com/crimsondesert"
+      },
+      {
+        "title": "View Case Study",
+        "url": "https://www.uxrplayer.com/deeppersona/index.html"
+      }
+    ]
   }
 ];
