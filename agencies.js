@@ -8274,11 +8274,11 @@ const REAL_AGENCIES = [
   },
   {
     "id": "uxrplayer",
-    "name": "UXRPLAYER",
+    "name": "UXR PLAYER KOREA",
     "website": "https://UXRPLAYER.com",
     "region": "Korea",
     "contact": "Jay Ahn",
-    "email": "directresearchkorea@gmail.com",
+    "email": "jacob.ahn@thedrk.com",
     "founded": "2015",
     "employees": "1-10",
     "longDescription": "UXR Player is an analytical research platform and resource provider delivering user experience (UX) insights, market behavior analysis, and consumer trend reports tailored to the Asian gaming and digital markets.",
@@ -8320,7 +8320,7 @@ const REAL_AGENCIES = [
       "Survey Platform"
     ],
     "emails": [
-      "directresearchkorea@gmail.com"
+      "jacob.ahn@thedrk.com"
     ],
     "keyPeople": [
       {
